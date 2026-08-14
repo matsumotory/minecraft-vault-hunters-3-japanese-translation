@@ -6,7 +6,7 @@
 
 - リポジトリを新設した。Forge公式MDK 1.18.2-40.3.11 (実機インスタンスのForgeと同版) から雛形を生成し、modid vhjapanese、最小の@Modクラスだけがある状態
 - GitHubへpush済み (2026-08-15、privateで作成)。publicへの切替は公開準備要件を満たしたときに本人が行う
-- ロゴはテーマ実測パレットのA案 (焦げ茶#2F0B04基調、琥珀→焔のダイヤ、羊皮紙文字) を採用し、src/main/resources/logo.pngへ同梱、mods.tomlのlogoFileで宣言済み (2026-08-15)
+- ロゴはテーマ実測パレットのC案 (羊皮紙#FCF5C5基調、焔→濃橙のダイヤ、焦げ茶文字) を本人が選定し、src/main/resources/logo.pngへ同梱、mods.tomlのlogoFileで宣言済み (2026-08-15)
 - 初回ビルドの結果はgitログとコミット本文が正
 - 公開基準の機械検査 scripts/check_publish_safety.py を備えた (通常はtracked+staged、`--history`で全コミット履歴。内部の固有名はgit管理外のローカルパターン表に置き、禁止リスト自体を公開しない設計)。コミットは検査との&&直結が運用 (CLAUDE.md第4節)
 - 翻訳データ (訳文のみ) の取り込みと、翻訳適用の実装はまだ無い
