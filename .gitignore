@@ -27,3 +27,6 @@ forge*changelog.txt
 # session worktrees / OS
 .claude/worktrees/
 .DS_Store
+
+# 公開基準検査のローカルパターン表 (内部名はtrackedに書かない)
+private-patterns.local.txt
