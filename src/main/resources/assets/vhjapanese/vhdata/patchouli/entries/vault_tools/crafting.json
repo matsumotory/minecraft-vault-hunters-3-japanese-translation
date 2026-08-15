@@ -1,0 +1,18 @@
+{
+  "sortnum": 4,
+  "name": "クラフト",
+  "icon": "the_vault:tool_station",
+  "category": "patchouli:vault_tools_category",
+  "read_by_default": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "ヴォールトツールにジュエルを付与できるようにするには、まずそのヴォールトツールをクラフトする必要がある。$(br2)クラフトできるのはプレイヤーの $(l)レベル以下$() のものに限られる。$(br2)クラフトしたジュエルは、ヴォールト内で見つかるジュエルと比べて確率が $(l)やや低め$() になる。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "the_vault:tool_station",
+      "text": "ヴォールトツールとジュエルは、どちらも $(l)ツールステーション$() でクラフトする。$(br2)ヴォールトツールをクラフトする際、$(l)ベースタイプ$() と $(l)ティア$() はプレイヤーが決定する。"
+    }
+  ]
+}

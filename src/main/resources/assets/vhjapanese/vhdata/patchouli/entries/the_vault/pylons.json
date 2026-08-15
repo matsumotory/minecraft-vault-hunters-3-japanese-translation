@@ -1,0 +1,18 @@
+{
+  "name": "パイロン",
+  "icon": "the_vault:pylon",
+  "category": "patchouli:the_vault_category",
+  "read_by_default": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "パイロンはヴォールト内で見つかる。$(br2)プレイヤーに$(l)一時的なステータス上昇$()を付与する。付与される$(l)効果$()とその$(l)持続時間$()は、パイロンの$(l)上$()に表示される。$(br2)パイロンは$(l)右クリック$()することで$(l)消費$()できる。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "the_vault:pylon",
+      "title": "効果",
+      "text": "プレイヤーに付与されうる$(l)効果$()は次の通り:$(br)$(li)再生能力$()$(li)体力増強$()$(li)マナを全回復$()$(li)移動速度上昇$()$(li)攻撃力上昇$()$(li)アイテム量$()$(li)アイテムレア度$()"
+    }
+  ]
+}

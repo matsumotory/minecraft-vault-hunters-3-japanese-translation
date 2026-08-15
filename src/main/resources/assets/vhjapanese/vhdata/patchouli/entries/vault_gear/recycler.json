@@ -1,0 +1,19 @@
+{
+  "sortnum": 5,
+  "name": "リサイクル",
+  "icon": "the_vault:vault_recycler",
+  "category": "patchouli:vault_gear_category",
+  "read_by_default": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "ヴォールト装備は、$(l)少量$()の資源にリサイクルできる。$(br2)精錬される装備バリエーションに応じて、$(l)ヴォールトスクラップ$()、$(l)マグネタイト$()、$(l)トリンケットスクラップ$()、その他の素材が得られることがある。$(br2)$(l)未鑑定$()のヴォールト装備もリサイクルできる。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "the_vault:vault_recycler",
+      "title": "ヴォールトリサイクラー",
+      "text": "これはヴォールトリサイクラーで行う。$(br2)ヴォールト装備の$(l)耐久値$()が下がっているほど、リサイクルで得られる$(l)素材$()の数は$(l)少なく$()なる。"
+    }
+  ]
+}

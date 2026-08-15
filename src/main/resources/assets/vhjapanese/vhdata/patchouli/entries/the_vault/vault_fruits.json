@@ -1,0 +1,18 @@
+{
+  "name": "ヴォールトフルーツ",
+  "icon": "the_vault:sweet_kiwi",
+  "category": "patchouli:the_vault_category",
+  "read_by_default": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "ヴォールト内の時間は、ヴォールトフルーツを食べることで$(l)延長$()できる。$(br2)ただし、ヴォールトフルーツを食べる際の注意点として、プレイヤーの$(l)最大体力$()を$(l)10%$()$(l)減少$()させてしまう。$(br2)ヴォールトが$(l)腐敗$()に呪われている場合、ヴォールトフルーツは食べられない。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "the_vault:sweet_kiwi",
+      "title": "ヴォールトフルーツ",
+      "text": "ヴォールトフルーツには次の種類がある:$(br)$(li)$(l)スウィートキウイ$()$(li2)+10秒 ヴォールト時間$()$(br)$(li)$(l)ビターレモン$()$(li2)+30秒 ヴォールト時間$()$(br)$(li)$(l)サワーオレンジ$()$(li2)+60秒 ヴォールト時間$()"
+    }
+  ]
+}

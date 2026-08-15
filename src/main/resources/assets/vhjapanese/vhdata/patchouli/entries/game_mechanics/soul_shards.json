@@ -1,0 +1,30 @@
+{
+  "name": "ソウルシャード",
+  "icon": "the_vault:soul_shard",
+  "category": "patchouli:game_mechanics_category",
+  "read_by_default": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "ヴォールト内で$(l)モブを倒す$()と、一定数のソウルシャードを得られる。$(br2)$(l)シャードポーチ$()を使うと、ソウルシャードを$(l)無限$()に保管できる。$(br2)ソウルシャードは、ヴォールトのレベルを下げるための$(l:game_mechanics/crystal_modification#banished_souls)$(t:追放されたソウル)$(l)追放されたソウル$()のクラフトに使用できる。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "the_vault:vault_diffuser",
+      "title": "ヴォールトソウルディフューザー",
+      "text": "ヴォールト内で見つかる多くのアイテムには$(l)ソウル値$()が設定されている。$(br2)これらのアイテムはヴォールトソウルディフューザーで$(l)ソウルダスト$()に$(l)分解$()できる。$(br2)ソウルダストは$(l)クラフト$()してソウルシャードにできる。"
+    },
+    {
+      "anchor": "black_market",
+      "type": "patchouli:crafting",
+      "recipe": "the_vault:black_market",
+      "title": "ブラックマーケット",
+      "text": "ブラックマーケットは、ソウルシャードを使ってアイテムを$(l)購入$()できる$(l)店$()。$(br2)在庫はプレイヤー$(l)個々$()に用意される。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "ブラックマーケット",
+      "text": "$(br)すべてのアイテムには$(l)個別の価格帯$()がある。不明なアイテムは、店にある$(l)任意の$()アイテムを$(l)1,500$()ソウルシャードで入手できる。$(br2)アイテムを購入するとその枠は空になり、$(l)在庫切れ$()になる。$(br2)$(l)2時間$()ごとにブラックマーケットの在庫が$(l)更新$()され、$(l)新しい3つ$()のアイテムが並ぶ。"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "sortnum": 4,
+  "name": "改造",
+  "icon": "the_vault:modifier_workbench",
+  "category": "patchouli:vault_gear_category",
+  "read_by_default": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "ヴォールト装備を$(l)発見$()するか$(l:vault_gear/crafting)$(l)クラフト$()した後、それを改造できる。$(br2)装備の改造は、$(t:インプリシット、接頭辞 & 接尾辞)$(l)アフィックス$()の調整から、$(l:vault_gear/variants#affixes_and_repairs)$(t:リペアスロット)$(l)リペアスロット$()の数の変更まで多岐にわたる。$(br2)モディファイアは$(l)ヴォールト職人ステーション$()と$(l)モディファイア作業台$()で変更できる。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "the_vault:vault_artisan_station",
+      "title": "ヴォールト職人ステーション",
+      "text": "ヴォールト職人ステーションでは、$(l)ヴォールトプレート$()と$(l)ヴォールトブロンズ$()を使って$(l)フォーカス$()をヴォールト装備に適用し、改造できる。$(br2)各フォーカスには専用の収納スロットがある。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "the_vault:modifier_workbench",
+      "title": "モディファイア作業台",
+      "text": "$(l)モディファイア作業台$()を使うと、プレイヤーは装備の特定の接頭辞や接尾辞を$(l)クラフト$()できる。$(br2)$(l)武器$()、$(l)防具$()、$(l)ユーティリティ$()には、$(l)単一$()のモディファイアだけをクラフトできる。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "the_vault:modifier_discovery",
+      "title": "モディファイアアーカイブ",
+      "text": "利用可能なモディファイアのすべてがヴォールト装備にクラフトできるとは$(l)限らない$()。$(br2)一部のモディファイアはプレイヤーの$(l)レベル$()によって制限されている$(br2)その他は、$(l)レベル60$()を超えるヴォールト内の$(l:the_vault/layout#dungeons)$(t:ダンジョン)ダンジョン$()で$(l)モディファイアアーカイブ$()を見つけることでプレイヤーに教えられる。"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "sortnum": 5,
+  "name": "ヴォールトポータル",
+  "icon": "the_vault:vault_stone",
+  "category": "patchouli:getting_started_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "ヴォールトロックを注入してヴォールトクリスタルを作ったら、プレイヤーは$(l)ポータルフレーム$()を用意する必要がある。$(br2)ポータルの中で$(l)ヴォールトクリスタル$()を右クリックすると、ヴォールトディメンションへの扉が開く。$(br2)フレームは$(l)どの種類$()の$(l)ヴォールトストーン$()でも組み立てられる。"
+    },
+    {
+      "type": "patchouli:multiblock",
+      "name": "ヴォールトポータル",
+      "multiblock": {
+        "pattern": [
+          [
+            "    ",
+            "SVSS",
+            "    "
+          ],
+          [
+            "    ",
+            "B  P",
+            "    "
+          ],
+          [
+            "    ",
+            "S  V",
+            "    "
+          ],
+          [
+            "    ",
+            "V  S",
+            "    "
+          ],
+          [
+            "   0",
+            "PSCS",
+            "    "
+          ]
+        ],
+        "mapping": {
+          "S": "the_vault:vault_stone",
+          "P": "the_vault:polished_vault_stone",
+          "V": "the_vault:vault_cobblestone",
+          "B": "the_vault:bumbo_polished_vault_stone",
+          "C": "the_vault:chiseled_vault_stone"
+        },
+        "symmetrical": false
+      },
+      "enable_visualize": true,
+      "text": "ポータルの大きさは$(l)最小4x5$()から$(l)最大23x23$()まで変えられる。"
+    }
+  ]
+}

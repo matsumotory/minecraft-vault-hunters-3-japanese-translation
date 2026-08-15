@@ -1,0 +1,26 @@
+{
+  "name": "スピリット",
+  "icon": "the_vault:spirit_extractor",
+  "category": "patchouli:game_mechanics_category",
+  "read_by_default": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "スピリットは、死亡後にヴォールト内で$(l)アイテムを回収する$()ための仕組み。$(br2)プレイヤーが死亡した$(l)時$()に持っていたアイテムを含んでいる。$(br2)スピリットが出現するかどうかは、対応する$(l:useful_commands/gamerule_commands#vaultmode)$(t:ゲームルール: vaultMode)$(l)ゲームルール$()による。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "出現",
+      "text": "$(br)$(l:the_vault/cooperative_vaults)$(l)協力ヴォールト$()で死亡した場合、スピリットはプレイヤーが$(l)死亡した$()$(l)場所$()に出現する。$(br2)スピリットを見つけたら、$(l)持ち運んで$()ヴォールトポータルへ$(l)投げ込む$()ことができる。$(br2)プレイヤーがヴォールト内に$(l)最後$()の1人として残っている場合、スピリットは$(l)オーバーワールド$()における、そのプレイヤーの$(l)スポーン$()地点に出現する。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "the_vault:spirit_extractor",
+      "text": "スピリットからアイテムを$(l)抽出$()するには、スピリットエクストラクターの上に置く必要がある。$(br2)抽出$(l)価格$()はスピリットが持つアイテムによって決まる。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": ""
+    }
+  ]
+}

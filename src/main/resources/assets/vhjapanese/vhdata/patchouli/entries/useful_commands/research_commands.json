@@ -1,0 +1,27 @@
+{
+  "sortnum": 4,
+  "name": "研究コマンド",
+  "icon": "the_vault:mod_box",
+  "category": "patchouli:useful_commands_category",
+  "read_by_default": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "研究チームを作成すると、$(l)他のプレイヤー$()と共に、すべての$(l:game_mechanics/researches)$(l)研究$()を段階的に解放できる。$(br2)研究チームで協力して研究を進めると、研究のコストがわずかに$(l)増加$()する。$(br2)$(l)加入前$()に解放済みの研究は、$(l)遡って$()解放され$(l)ない$()。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "研究コマンド",
+      "text": "$(li)$(8)$(l)/the_vault research_team invite <player>$()$(li2)プレイヤーを招待する$()$(br)$(li)$(8)$(l)/the_vault research_team accept_invite <player>$()$(li2)プレイヤーからの研究チーム招待を承諾する$()$(br)$(li)$(c:/the_vault research_team list)$(t:クリックでこのコマンドを実行)$(l)/the_vault research_team list$()$(li2)全メンバーを一覧表示する$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "研究コマンド",
+      "text": "$(li)$(c:/the_vault research_team leave)$(t:クリックでこのコマンドを実行)$(l)/the_vault research_team leave$()$(li2)研究チームを脱退する$()"
+    },
+    {
+      "type": "patchouli:text",
+      "text": ""
+    }
+  ]
+}

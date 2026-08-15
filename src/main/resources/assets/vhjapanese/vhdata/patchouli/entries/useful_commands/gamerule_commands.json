@@ -1,0 +1,40 @@
+{
+  "sortnum": 2,
+  "name": "ゲームルールコマンド",
+  "icon": "minecraft:clock",
+  "category": "patchouli:useful_commands_category",
+  "read_by_default": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Vault Huntersの$(l)プレイ体験$()を$(l)調整$()するため、独自のゲームルールがいくつか導入されている。$(br2)マルチプレイのサーバーでは、これらのルールは$(l)全て$()のプレイヤーに適用される。$(br2)これらのゲームルールのほとんどは、ゲームの$(l)バランス$()を崩してしまう。そのため、大半のゲームルールは$(l)デフォルト設定$()のままにしておくことを$(l)推奨$()する。"
+    },
+    {
+      "anchor": "vaultmode",
+      "type": "patchouli:text",
+      "title": "ゲームルールコマンド",
+      "text": "$(li)$(8)$(l)/gamerule$(br)vaultMode$(br)<mode>$()$(li2)プレイヤーが$(l:game_mechanics/spirits)ヴォールト内で倒された際の挙動を変更する$()$()$(br2)使用可能な引数:$(li)$(c:/gamerule vaultMode CASUAL)$(t:クリックでコマンドを実行)カジュアル$()$(li2)ヴォールトでの死亡時にアイテムを保持する$()$(li)$(c:/gamerule vaultMode NORMAL)$(t:クリックでコマンドを実行)ノーマル$(/c)$(/t) $(8)(デフォルト)$()$(li2)ヴォールトでの死亡時にスピリットが出現する$()$(li)$(c:/gamerule vaultMode HARDCORE)$(t:クリックでコマンドを実行)ハードコア$()$(li2)ヴォールトでの死亡時にスピリットが出現しない$()"
+    },
+    {
+      "anchor": "vaultloot",
+      "type": "patchouli:text",
+      "title": "ゲームルールコマンド",
+      "text": "$(li)$(8)$(l)/gamerule$(br)vaultLoot$(br)<loot>$()$(li2)ヴォールト内の全チェストにある$(l:the_vault/loot)戦利品$()の量を変更する$()$()$(br2)使用可能な引数:$(li)$(c:/gamerule vaultLoot NORMAL)$(t:クリックでコマンドを実行)ノーマル$(/c)$(/t) $(8)(デフォルト)$()$(li2)ヴォールト戦利品1倍$()$(li)$(c:/gamerule vaultLoot PLENTY)$(t:クリックでコマンドを実行)プレンティ$()$(li2)ヴォールト戦利品2倍$()$(li)$(c:/gamerule vaultLoot EXTREME)$(t:クリックでコマンドを実行)エクストリーム$()$(li2)ヴォールト戦利品3倍$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "ゲームルールコマンド",
+      "text": "$(li)$(8)$(l)/gamerule$(br)vaultCrystalMode$(br)<crystalMode>$()$(li2)ヴォールト祭壇のコストを変更する$()$()$(br2)使用可能な引数:$(li)$(c:/gamerule vaultCrystalMode INFINITY)$(t:クリックでコマンドを実行)インフィニティ$()$(li2)$(t:ヴォールト祭壇はレッドストーン信号での\n起動が引き続き必要)ヴォールト祭壇のスケーリングなし$()$(li)$(c:/gamerule vaultCrystalMode NORMAL)$(t:クリックでコマンドを実行)ノーマル$(/c)$(/t) $(8)(デフォルト)$()$(li2)ヴォールト祭壇のスケーリング1倍$()$(li)$(c:/gamerule vaultCrystalMode EXTREME)$(t:クリックでコマンドを実行)エクストリーム$()$(li2)ヴォールト祭壇のスケーリング2倍$()$(li)$(c:/gamerule vaultCrystalMode GRINDY)$(t:クリックでコマンドを実行)グラインディ$()$(li2)ヴォールト祭壇のスケーリング3倍$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "ゲームルールコマンド",
+      "text": "$(li)$(8)$(l)/gamerule$(br)vaultAllowWaypoints$(br)<true/false>$()$(li2)ヴォールト内でウェイポイントを設定できるかどうかを変更する$()$()$(br2)使用可能な引数:$(li)$(c:/gamerule vaultAllowWaypoints true)$(t:クリックでコマンドを実行)有効$()$(li2)ヴォールト内でウェイポイントを使用可能にする$()$(li)$(c:/gamerule vaultAllowWaypoints false)$(t:クリックでコマンドを実行)無効$(/c)$(/t) $(8)(デフォルト)$()$(li2)ヴォールト内でウェイポイントを使用不可にする$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "ゲームルールコマンド",
+      "text": "$(li)$(8)$(l)/gamerule$(br)vaultJoinRequireParty$(br)<true/false>$()$(li2)プレイヤーがヴォールトで$(l:the_vault/cooperative_vaults)協力$()するのにパーティが必要かどうかを変更する$()$()$(br2)使用可能な引数:$(li)$(c:/gamerule vaultAllowWaypoints true)$(t:クリックでコマンドを実行)有効$()$(li2)パーティが必須になる$()$(li)$(c:/gamerule vaultAllowWaypoints false)$(t:クリックでコマンドを実行)無効$(/c)$(/t) $(8)(デフォルト)$()$(li2)パーティは不要になる$()"
+    }
+  ]
+}

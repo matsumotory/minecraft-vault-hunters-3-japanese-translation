@@ -1,0 +1,17 @@
+{
+  "sortnum": 3,
+  "name": "ヴォールトロック",
+  "icon": "the_vault:vault_rock",
+  "category": "patchouli:getting_started_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "必要な量のクロマティックアイアンを集めると、$(l)Y: -5以下$()でヴォールトストーンの塊を見つけられる。$(br2)ヴォールトストーンを採掘すると、10%の確率で$(l)欠けたヴォールトロック$()がドロップする。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "the_vault:vault_rock",
+      "text": "$(l)欠けたヴォールトロック$()と$(l)クロマティックアイアン$()を作業台で組み合わせると$(l)ヴォールトロック$()になる。"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "ヴォールトドール",
+  "icon": "the_vault:vault_doll",
+  "category": "patchouli:game_mechanics_category",
+  "read_by_default": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "ヴォールトドールは$(l)他のプレイヤー$()に$(l)自分の代わりに$()ヴォールトを周回してもらうためにクラフトする。$(br2)クラフト時に$(l)戦利品効率$()と$(l)経験値効率$()が決まり、これが持ち帰る$(l)戦利品$()と$(l)ヴォールト経験値$()の割合を左右する。$(br2)ヴォールトドールは$(l)Curiosの頭部スロット$()に装着したときのみ機能する。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "the_vault:vault_doll",
+      "title": "ヴォールトドール",
+      "text": "ヴォールトを出た後、ヴォールトドールは$(l)所有者$()が$(l)解放$()できる。$(br2)所有者はヴォールトドールを地面に$(l)置く$()ことができ、その後$(l)倒す$()ことで報酬を受け取れる。"
+    }
+  ]
+}

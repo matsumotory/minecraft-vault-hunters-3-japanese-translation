@@ -1,0 +1,102 @@
+{
+  "name": "クリスタルの改造",
+  "icon": "the_vault:augment",
+  "category": "patchouli:game_mechanics_category",
+  "read_by_default": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "ヴォールトクリスタルを鍛造すると、$(l)改造$()してヴォールト内の体験を調整できる。$(br2)改造は$(l)金床$()を使って行い、経験値レベルをいくらか消費する。$(br2)特定の改造をヴォールトクリスタルに適用すると、$(l)不安定度$()が上昇する。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "不安定度",
+      "text": "$(br)不安定度が高いほど、$(l)呪われる$()か$(l)改造不可$()になる確率が上がる。これはヴォールトクリスタルの不安定度を$(l)変化させる$()改造を適用したときにのみ発生しうる。$(br2)ヴォールトクリスタルは75%の確率で$(l)呪われ$()、ランダムな呪いのモディファイアが追加される。ヴォールトクリスタルに付いた呪いの数は$(l)ドクロ$()の数で示される。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "the_vault:crystal_seal_executioner",
+      "title": "封印",
+      "text": "封印を適用すると、特定の$(l)$(l:the_vault/objectives)目標$()を強制できる。$(br2)封印はプレイヤーが$(l)クラフトする$()。$(br2)封印は$(l)すべての目標$()に存在するが、「モノリスに灯をともせ」だけは$(l)例外$()。ケーキハントの目標は封印でしか$(l)開始できない$()。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "the_vault:augment",
+      "title": "オーグメント",
+      "text": "オーグメントを適用すると、特定の$(l)テーマ$()を強制できる。$(br2)オーグメントは$(l)達成クレート$()の中に低確率(20%)で入っており、まれに入手できる。$(br2)オーグメントに刻まれたテーマは、$(l)達成したヴォールト$()のテーマと$(l)同じ$()。$(br2)"
+    },
+    {
+      "anchor": "vault_catalysts",
+      "type": "patchouli:crafting",
+      "recipe": "the_vault:vault_catalyst",
+      "title": "ヴォールトカタリスト",
+      "text": "カタリストフラグメントは$(l)木のチェスト$()の中で見つかる。$(br2)これらを組み合わせてクラフトすると、ヴォールトカタリストになる。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "the_vault:vault_catalyst",
+      "title": "ヴォールトカタリスト",
+      "text": "ヴォールトカタリストを適用すると特定の$(l)$(l:the_vault/modifiers)モディファイア$()が追加できる。$(br2)これにより、ヴォールトクリスタルの$(l)不安定度$()が追加されたモディファイアごとに$(l)5%$()上昇する。$(br2)ただし、ヴォールトカタリストを適用する前に$(l)注入$()する必要がある。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "the_vault:catalyst_infusion_table",
+      "title": "ヴォールトカタリスト",
+      "text": "これは$(l)カタリスト注入台$()で$(l)神秘のエッセンス$()とともに行う。$(br2)$(l)ポジティブ$()なモディファイアが適用され、多くの場合$(l)ランダムなネガティブ$()モディファイアも追加される。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "the_vault:vault_catalyst_chaos",
+      "title": "混沌のヴォールトカタリスト",
+      "text": "$(l:the_vault/loot#treasure_chests)宝のチェスト$()や$(l:game_mechanics/soul_shards#black_market)ブラックマーケット$()で見つかる混沌のヴォールトカタリストは、ヴォールトに$(l)予測不能な$()体験をもたらす。$(br2)ヴォールトに対して$(l)ランダムな30個の$(l:the_vault/modifiers)モディファイア$()を、$(l)ポジティブ$()と$(l)ネガティブ$()の両方から適用する。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "the_vault:inscription{data:{completion:0.07f,instability:0.012f,model:0,time:693}}",
+      "title": "碑文",
+      "text": "碑文は生きたチェストの中で見つかり、$(l)碑文の欠片$()は木のチェストと生きたチェストの両方で見つかる。$(br2)碑文は$(l)達成度$()、$(l)時間$()、$(l)不安定度$()をランダムに決定する。達成度は、ヴォールトの一部が$(l)岩盤$()に置き換わる仕組み。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "the_vault:inscription_table",
+      "title": "碑文",
+      "text": "碑文は$(l)碑文台$()で碑文の欠片を使ってクラフトできる。$(br2)$(l)空$()の碑文と$(l)部屋$()の碑文のどちらもクラフトできる。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "the_vault:inscription{data:{completion:0.07f,instability:0.012f,model:0,time:2273,entries:[{color:7012096,count:1,pool:'the_vault:vault/rooms/omega/mush_room'}],model:2}}",
+      "title": "部屋の碑文",
+      "text": "部屋の碑文には$(l)オメガ$()または$(l)チャレンジ$()ルームが含まれている。$(br2)これらは$(l)ヴォールトクリスタル$()と組み合わせて、$(l:the_vault/objectives#architect)$(l)建築家ヴォールト$()に紐付けられる。$(br2)ルームを含まない$(l)他の$()碑文も追加でき、建築家ヴォールトの$(l)時間$()と$(l)達成度$()を増加させられる。"
+    },
+    {
+      "anchor": "motes",
+      "type": "patchouli:spotlight",
+      "item": "the_vault:mote_clarity",
+      "title": "モート",
+      "text": "モートは呪いを可視化したり除去したりするために使う。$(l)改造不可$()のヴォールトクリスタルにも適用できる。$(br)$(li)$(l)明瞭のモート$()$(li2)すべての呪いを可視化する$()$(li)$(l)純粋のモート$()$(li2)ランダムな呪いを1つ除去する$()$(li)$(l)神聖のモート$()$(li2)すべての呪いを除去する$()"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:wither_skeleton_skull",
+      "title": "ウィザースケルトンの頭骨",
+      "text": "ヴォールトクリスタルとウィザースケルトンの頭骨を組み合わせると、$(l:vault_modifiers/curses)$(l)呪い$()が適用される。$(br2)ヴォールトに$(l)追加のチャレンジ$()を加えたいときに使うとよい。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "the_vault:soul_flame",
+      "title": "ソウルフレイム",
+      "text": "$(l:vault_modifiers/positive_modifiers/saving_grace_modifiers)$(t:セービンググレースモディファイア)$(l)アフターライフ$()は、ソウルフレイムを使ってのみ付与できるモディファイア。$(br2)死亡時のアイテムロストを防ぐため、$(l)未改造$()のクリスタルにのみ適用できる。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "the_vault:banished_soul",
+      "title": "追放されたソウル",
+      "text": "追放されたソウルは、ヴォールトの$(l)レベル$()を$(l)下げる$()ために使う。$(br2)ヴォールトのレベルより$(l)4レベル$()以上高い状態から、プレイヤーは戦利品の量に$(l)ペナルティ$()を受ける。"
+    },
+    {
+      "anchor": "banished_souls",
+      "type": "patchouli:text",
+      "text": ""
+    }
+  ]
+}

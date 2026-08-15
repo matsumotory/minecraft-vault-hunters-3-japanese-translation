@@ -1,0 +1,6 @@
+{
+  "sortnum": 4,
+  "name": "スキル",
+  "description": "スキルはVault Huntersの$(l)不可欠な$()要素であり、プレイヤーは特定の$(l)アビリティ$()を使用したり、$(l)高度な機械$()を$(l)操作$()したりできるようになる。",
+  "icon": "the_vault:scavenger_wizard_wand"
+}

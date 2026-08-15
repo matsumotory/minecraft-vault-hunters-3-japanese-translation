@@ -1,0 +1,18 @@
+{
+  "sortnum": 7,
+  "name": "リサイクル",
+  "icon": "the_vault:vault_recycler",
+  "category": "patchouli:vault_tools_category",
+  "read_by_default": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "ジュエルは $(l)少量$() の資源にリサイクルできる。$(br2)得られるのは $(l)ジェムストーン$() や $(l)シルバースクラップ$() だ。$(br2)ヴォールトツールは $(l)リサイクルできない$()。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "the_vault:vault_recycler",
+      "text": "ジュエルはヴォールトリサイクラーで製錬される。$(br2)ジュエルを製錬する主な $(l)目的$() は、$(l)新しく$() $(l)改良された$() ジュエルをクラフトすることだ。"
+    }
+  ]
+}

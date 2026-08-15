@@ -1,0 +1,28 @@
+{
+  "sortnum": 1,
+  "name": "難易度コマンド",
+  "icon": "the_vault:scavenger_skeleton_skull",
+  "category": "patchouli:useful_commands_category",
+  "read_by_default": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "難易度はプレイヤーの好みに合わせて設定でき、$(l:the_vault/mobs)$(l)モブ$()の$(l)スケーリング$()を調整する。$(br2)これにより$(l)体力$()と$(l)ダメージ$()が変化するが、ヴォールト内で見つかる$(l)戦利品$()の量は$(l)変わらない$()。これは別の$(l:useful_commands/gamerule_commands#vaultloot)$(t:ゲームルール: vaultLoot)$(l)ゲームルール$()で設定する。$(br2)$(l)ハード$()以上の難易度では、$(l)ヴォールトファイター$()が稀にプレイヤーへ$(l)レンガ$()を投げてくることがある。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "難易度コマンド",
+      "text": "$(br)設定可能なヴォールトの難易度は以下の通り:$(br)$(li)$(l)朝飯前$()$(li2)モブスケーリング0.25倍$()$(li)$(l)イージー$()$(li2)モブスケーリング0.50倍$()$(li)$(l)ノーマル$()$(li2)モブスケーリング0.75倍$()$(li)$(l)ハード$()$(li2)モブスケーリング1倍$()$(li)$(l)インポッシブル$()$(li2)モブスケーリング2倍$()$(li)$(l)フラグド$()$(li2)モブスケーリング4倍$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "難易度コマンド",
+      "text": "$(li)$(8)$(l)/the_vault$(br)difficulty$(br)<difficulty>$()$(li2)全プレイヤー共通のヴォールト難易度を設定する$()$(br2)使用可能な引数:$(li)$(c:/the_vault difficulty piece_of_cake)$(t:クリックでコマンドを実行)朝飯前$()$(li)$(c:/the_vault difficulty easy)$(t:クリックでコマンドを実行)イージー$()$(li)$(c:/the_vault difficulty normal)$(t:クリックでコマンドを実行)ノーマル$(/c)$(/t) $(8)(デフォルト)$()$()$(li)$(c:/the_vault difficulty hard)$(t:クリックでコマンドを実行)ハード$()$(li)$(c:/the_vault difficulty impossible)$(t:クリックでコマンドを実行)インポッシブル$()$(li)$(c:/the_vault difficulty fragged)$(t:クリックでコマンドを実行)フラグド$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "難易度コマンド",
+      "text": "$(li)$(8)$(l)/the_vault$(br)local_difficulty$(br)<difficulty>$()$(li2)プレイヤー個人のヴォールト難易度を設定する$()$(br2)使用可能な引数:$(li)$(c:/the_vault local_difficulty @p piece_of_cake)$(t:クリックでコマンドを実行)朝飯前$()$(li)$(c:/the_vault local_difficulty @p easy)$(t:クリックでコマンドを実行)イージー$()$(li)$(c:/the_vault local_difficulty @p normal)$(t:クリックでコマンドを実行)ノーマル$(/c)$(/t) $(8)(デフォルト)$()$()$(li)$(c:/the_vault local_difficulty @p hard)$(t:クリックでコマンドを実行)ハード$()$(li)$(c:/the_vault local_difficulty @p impossible)$(t:クリックでコマンドを実行)インポッシブル$()$(li)$(c:/the_vault local_difficulty @p fragged)$(t:クリックでコマンドを実行)フラグド$()"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "sortnum": 5,
+  "name": "研究",
+  "icon": "the_vault:knowledge_star",
+  "category": "patchouli:skills_category",
+  "read_by_default": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Vault HuntersのほとんどのMODは$(l)研究$()の先に$(l)ロックされている$()。$(br2)研究は$(l)グループ化$()されており、あるグループの研究をアンロックすると、$(l)同じグループ$()内の$(l)他$()の研究の$(l)コスト$()が$(l)上昇する$()ことがある。$(br2)一部の研究は、$(l)ヴォールト装備$()の$(l:vault_gear/identification#model)$(t:モデル)$(l)モデル$()を発見することもある。$(br2)研究は、他のプレイヤーと$(l:useful_commands/research_commands)$(l)共有$()できる。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "the_vault:knowledge_star",
+      "title": "知識のスター",
+      "text": "研究は$(l)知識のスター$()を消費することでアンロックできる。$(br2)いったん習得すると、その研究は$(l)リセット$()$(l)できない$()。"
+    }
+  ]
+}

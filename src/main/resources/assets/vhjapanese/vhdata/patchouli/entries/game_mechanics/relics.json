@@ -1,0 +1,18 @@
+{
+  "name": "レリック",
+  "icon": "the_vault:vault_relic{VaultModelId:\"the_vault:relic/elemental/statue\"}",
+  "category": "patchouli:game_mechanics_category",
+  "read_by_default": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "レリックはヴォールトゴッドの遺物。$(br2)レリックセットを$(l)個別に$()コンプリートするごとに、すべてのヴォールト内で$(l)追加の30秒$()の$(l)時間$()を得られる。$(br2)レリックフラグメントは$(l)レリックブースターパック$()と$(l)未鑑定のレリックフラグメント$()の両方から入手できる。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "the_vault:relic_pedestal",
+      "title": "レリック台座",
+      "text": "$(l)すべての$()レリックフラグメントを$(l)集める$()と、$(l)レリック$()へ組み立てられる。$(br2)これはレリック台座で、正しいレリックを$(l)選択する$()ことで行う。"
+    }
+  ]
+}

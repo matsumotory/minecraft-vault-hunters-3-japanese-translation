@@ -1,0 +1,9 @@
+{
+ "format": "path-map/1",
+ "strings": {
+  "labels[0].label.description.text": "ユーティリティ",
+  "labels[1].label.description.text": "攻撃",
+  "labels[2].label.description.text": "パワーアップ",
+  "labels[3].label.description.text": "アルティメット"
+ }
+}

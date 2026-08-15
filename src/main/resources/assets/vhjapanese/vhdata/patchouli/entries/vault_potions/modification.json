@@ -1,0 +1,29 @@
+{
+  "sortnum": 2,
+  "name": "モディフィケーション",
+  "icon": "the_vault:alchemy_table",
+  "category": "patchouli:vault_potions_category",
+  "read_by_default": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "ヴォールトポーションは改造して$(l)モディファイア$()を持たせられる。$(br2)ヴォールトポーションの$(l)ティア$()が$(l)高い$()ほど、モディファイアスロットの数は増える。$(br2)スロット数は次の通り:$(br)$(li)0: $(l)バイアル$()$(li)1: $(l)ポーション$()$(li)2: $(l)ミクスチャー$()$(li)3: $(l)ブリュー$()"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "the_vault:alchemy_table",
+      "title": "錬金術台",
+      "text": "錬金術台では、$(l)ヴォールトゴールド$()と$(l)毒キノコ$()を消費して、好みのモディファイアをヴォールトポーションへ$(l)クラフト$()できる。$(br2)ヴォールトポーションを$(l)消費する$()と、モディファイアが$(l)20秒間$()適用される。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "the_vault:alchemy_archive",
+      "title": "錬金術の書庫",
+      "text": "使用可能なすべてのモディファイアがヴォールトポーションにクラフトできるわけでは$(l)ない$()。$(br2)一部のモディファイアはプレイヤーの$(l)レベル$()によって制限されている。$(br2)その他は、任意のヴォールト内の$(l:the_vault/layout#dungeons)$(t:Dungeons)ダンジョン$()で$(l)錬金術の書庫$()を見つけることで習得できる。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": ""
+    }
+  ]
+}

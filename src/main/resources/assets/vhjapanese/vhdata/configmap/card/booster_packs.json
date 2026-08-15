@@ -1,0 +1,21 @@
+{
+ "format": "path-map/1",
+ "strings": {
+  "values.the_vault:arcane_pack.name.text": "アルケインブースターパック",
+  "values.the_vault:default.name.text": "ステータスブースターパック",
+  "values.the_vault:evolution_pack.name.text": "進化ブースターパック",
+  "values.the_vault:greed_pack.name.text": "グリードブースターパック",
+  "values.the_vault:mega_arcane_pack.name.text": "メガアルケインブースターパック",
+  "values.the_vault:mega_evolution_pack.name.text": "メガ進化ブースターパック",
+  "values.the_vault:mega_greed_pack.name.text": "メガグリードブースターパック",
+  "values.the_vault:mega_mix_pack.name.text": "メガミックスブースターパック",
+  "values.the_vault:mega_resource_pack.name.text": "メガリソースブースターパック",
+  "values.the_vault:mega_stat_pack.name.text": "メガステータスブースターパック",
+  "values.the_vault:mix_pack.name.text": "ミックスブースターパック",
+  "values.the_vault:resource_pack.name.text": "リソースブースターパック",
+  "values.the_vault:shiny_pack.name.text": "シャイニーステータスブースターパック",
+  "values.the_vault:stat_pack.name.text": "ステータスブースターパック",
+  "values.the_vault:temporal_pack.name.text": "テンポラルブースターパック",
+  "values.the_vault:wild_pack.name.text": "ワイルドブースターパック（レガシー）"
+ }
+}

@@ -1,0 +1,18 @@
+{
+  "sortnum": 1,
+  "name": "マナ",
+  "icon": "botania:mana_bottle",
+  "category": "patchouli:skills_category",
+  "read_by_default": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "HUDの左下にある$(l)青いバー$()は、プレイヤーの現在の$(l)マナ$()を示す。$(br2)マナはプレイヤーの$(l)アビリティ$()を発動・使用するために使われる。$(br2)デフォルトでは、プレイヤーの最大$(l)マナ$()は$(l)100$()だ。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "マナ",
+      "text": "$(br)マナは時間の経過とともに$(l)パッシブ$()に回復する。マナの$(l)量$()とその$(l)回復速度$()は$(l)ステータスメニュー$()で確認できる。$(br2)マナのステータスは、$(l:vault_gear/variants)$(t:ヴォールト装備)$(l)ヴォールト装備$()や$(l:vault_potions/variants)$(t:ヴォールトポーション)$(l)ヴォールトポーション$()に付く特定のアフィックスによって$(l)強化$()できる。"
+    }
+  ]
+}

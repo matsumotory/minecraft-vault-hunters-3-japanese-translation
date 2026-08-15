@@ -1,0 +1,19 @@
+{
+ "format": "path-map/1",
+ "strings": {
+  "translations.the_vault.boss_rune_effect.ability_haste": "アビリティヘイスト",
+  "translations.the_vault.boss_rune_effect.aoe_attack": "範囲攻撃",
+  "translations.the_vault.boss_rune_effect.attribute_dmg": "ダメージ増加",
+  "translations.the_vault.boss_rune_effect.attribute_health": "追加体力",
+  "translations.the_vault.boss_rune_effect.buff_effect": "バフ効果",
+  "translations.the_vault.boss_rune_effect.damage": "ダメージ",
+  "translations.the_vault.boss_rune_effect.health": "体力",
+  "translations.the_vault.boss_rune_effect.heavy_melee": "重近接攻撃",
+  "translations.the_vault.boss_rune_effect.heavy_ranged": "重遠隔攻撃",
+  "translations.the_vault.boss_rune_effect.light_melee": "近接攻撃",
+  "translations.the_vault.boss_rune_effect.light_ranged": "遠隔攻撃",
+  "translations.the_vault.boss_rune_effect.on-hit_effect": "ヒット時効果",
+  "translations.the_vault.gear_attribute.effect_avoidance.avoidance": "%s回避",
+  "translations.the_vault.gear_attribute.effect_avoidance.avoidance.bad_effects": "効果"
+ }
+}

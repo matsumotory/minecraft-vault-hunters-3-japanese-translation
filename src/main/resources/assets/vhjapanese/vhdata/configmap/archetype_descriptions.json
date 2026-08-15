@@ -1,0 +1,27 @@
+{
+ "format": "path-map/1",
+ "strings": {
+  "descriptions.the_vault:barbarian[0].text": "内なる血への渇望を解き放て！\n\n",
+  "descriptions.the_vault:barbarian[2].text": "レイジ3",
+  "descriptions.the_vault:barbarian[3].text": " （ヒットごとに獲得）\n",
+  "descriptions.the_vault:barbarian[5].text": "レイジポイントごとに2.5% ダメージ\n",
+  "descriptions.the_vault:barbarian[7].text": "レイジポイントごとに0.5% 回復効率低下",
+  "descriptions.the_vault:berserker[0].text": "魂をバーサーカーの精神で満たせ！\n\n",
+  "descriptions.the_vault:berserker[2].text": "500% ダメージ\n",
+  "descriptions.the_vault:berserker[4].text": "80% 最大体力",
+  "descriptions.the_vault:commander[0].text": "エターナルを率いて栄光の勝利へ導け！\n\n",
+  "descriptions.the_vault:commander[2].text": "100% エターナルへのダメージ\n",
+  "descriptions.the_vault:commander[4].text": "50% プレイヤーへのダメージ",
+  "descriptions.the_vault:default[0].text": "あなたの美しいそのままの姿。バフもデバフも無し",
+  "descriptions.the_vault:treasure_hunter[0].text": "略奪の技に身を捧げよ！\n\n",
+  "descriptions.the_vault:treasure_hunter[2].text": "50% アイテム数量\n",
+  "descriptions.the_vault:treasure_hunter[4].text": "50% アイテム品質\n",
+  "descriptions.the_vault:treasure_hunter[6].text": "100% 被ダメージ",
+  "descriptions.the_vault:vampire[0].text": "あなたのヴァンパイアの血脈が強く脈打つ\n\n",
+  "descriptions.the_vault:vampire[2].text": "5% 生命吸収\n",
+  "descriptions.the_vault:vampire[4].text": "他のいかなる手段でも回復できない",
+  "descriptions.the_vault:ward[0].text": "盾を持って最強の壁になれ！\n\n",
+  "descriptions.the_vault:ward[2].text": "25% 盾装備時のブロック確率\n",
+  "descriptions.the_vault:ward[4].text": "50% プレイヤーへのダメージ"
+ }
+}

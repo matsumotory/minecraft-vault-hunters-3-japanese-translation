@@ -1,0 +1,61 @@
+{
+  "sortnum": 3,
+  "name": "呪い",
+  "icon": "the_vault:scavenger_skeleton_skull",
+  "category": "patchouli:modifiers_category",
+  "read_by_default": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "呪いはヴォールトをプレイヤーの$(l)大きな不利$()に働かせる。$(br2)呪いは、$(l)ヴォールトカタリスト$()、$(l)碑文$()、$(l)ソウルフレイム$()、または$(l)ウィザースケルトンの頭骨$()のいずれかでヴォールトクリスタルが$(l:game_mechanics/crystal_modification)$(l)改造$()されている場合のみ、ヴォールト中に発生しうる。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "呪い",
+      "text": "$(br)ヴォールトクリスタルにある$(l)頭骨$()の数が、そのヴォールトクリスタルがもたらす呪いの$(l)量$()を示す。$(br2)ヴォールト中にどの呪いが発生するかは、$(l:game_mechanics/crystal_modification#motes)$(t:モート)$(l)モート$()の使用を通じてプレイヤーが確認し$(l)制御できる$()。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:player_head",
+      "title": "プレイヤーの呪い",
+      "text": "プレイヤーの呪いはヴォールト内でプレイヤーの$(l)ステータス$()に影響を与える。$(br2)$(l)採掘疲労$()の付与から$(l)マナ再生$()の低下まで、多岐にわたる。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "プレイヤーの呪い",
+      "text": "$(li)$(l)空腹$()$(li2)+1 空腹$()$(br)$(li)$(l)採掘疲労$()$(li2)+1 採掘疲労$()$(br)$(li)$(l)減速$()$(li2)+1 減速$()$(br)$(li)$(l)弱体化$()$(li2)+1 弱体化$()$(br)$(li)$(l)イナート$()$(li2)-10% クールダウン短縮$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "プレイヤーの呪い",
+      "text": "$(li)$(l)重傷$()$(li2)-10 体力$()$(br)$(li)$(l)枯渇$()$(li2)-70% マナ再生$()$(br)$(li)$(l)Modifier$()$(li2)ModifierText$()$(br)$(li)$(l)フレンジー$()$(li2)+300% モブダメージ$()$(li2)+10% モブ速度$()$(li2)モブ体力が1に低下$()"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:map",
+      "title": "生成の呪い",
+      "text": "生成の呪いは$(l)ヴォールト$()の$(l)生成$()のされ方に影響する。$(br2)ヴォールトの出口が$(l)ロック$()されたり、$(l)TNT$()がランダムに出現したりすることもある。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "生成の呪い",
+      "text": "$(li)$(l)崩壊$()$(li2)岩盤が徐々にヴォールトを埋めていく$()$(br)$(li)$(l)火山$()$(li2)溶岩が徐々にヴォールトを満たしていく$()$(br)$(li)$(l)爆発$()$(li2)TNTが徐々にヴォールトを爆破していく$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "生成の呪い",
+      "text": "$(li)$(l)シュルカー化$()$(li2)シュルカーの弾がヴォールト内にランダムに出現する$()$(br)$(li)$(l)ロック$()$(li2)$(l:the_vault/objectives)目標$()を達成するまで出口がロックされる$()"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "minecraft:experience_bottle",
+      "title": "その他の呪い",
+      "text": "$(li)$(l)腐敗$()$(li2)$(l:the_vault/vault_fruits)ヴォールトフルーツ$()を食べられなくなる$()$(br)$(li)$(l)地雷原$()$(li2)+40% チェストトラップ確率$()"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "その他の呪い",
+      "text": "$(li)$(l)木星の重力°$()$(li2)プレイヤーはジャンプできなくなる$()$(br)$(li)$(l)カニ歩き°$()$(li2)プレイヤーは左右にしか移動できなくなる$()$(br)$(li)$(l)混乱°$()$(li2)プレイヤーの移動方向が反転する$()$(br2)$(br)※ウィザースケルトンの頭骨の使用時のみ$(br)適用される$()"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "sortnum": 2,
+  "name": "クロマティックアイアン",
+  "icon": "the_vault:raw_chromatic_iron",
+  "category": "patchouli:getting_started_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "クロマティックアイアンは鉱石で、$(l)Y: -32以下$()に豊富な鉱脈として出現し、時には地表に露出していることもある。$(br2)採掘すると$(l)クロマティックアイアンの原石$()が手に入る。鉱石1つあたりのドロップ数は$(l)幸運$()で増やせる。"
+    },
+    {
+      "type": "patchouli:smelting",
+      "recipe": "the_vault:smelt_raw_chromatic_iron",
+      "title": "クロマティックアイアン",
+      "text": "クロマティックアイアンの原石は精錬すると$(l)クロマティックアイアンインゴット$()になる。$(br2)クロマティックアイアンインゴットは多くの$(l)レシピ$()で使われる。$(br2)オーバーワールドで見つけるのは$(l)一部$()だけでよく、$(l)ヴォールト内$()でも入手できる。"
+    }
+  ]
+}

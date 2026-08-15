@@ -1,0 +1,19 @@
+{
+  "sortnum": 4,
+  "name": "エキスパティーズ",
+  "icon": "fairylights:witch_light{color:8991416}",
+  "category": "patchouli:skills_category",
+  "read_by_default": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "エキスパティーズは$(l)パッシブ$()なスキルであり、マナを$(l)必要としない$()。$(br2)エキスパティーズは、5回$(l)レベルアップ$()するごとに得られる$(l)エキスパティーズポイント$()を消費することで$(l)習得$()や$(l)強化$()ができる。$(br2)各エキスパティーズには、エキスパティーズのレベルに応じて$(l)スケーリングする$()さまざまな$(l)パラメータ$()がある。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "the_vault:neuralizer",
+      "title": "ニューラライザー",
+      "text": "エキスパティーズは$(l)リセット$()のコストが高い。$(br2)ニューラライザーを右クリックすると、それを消費してエキスパティーズを$(l)一括ですべてリセットする$()。"
+    }
+  ]
+}

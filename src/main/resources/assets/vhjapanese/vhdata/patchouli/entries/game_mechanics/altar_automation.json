@@ -1,0 +1,28 @@
+{
+  "name": "祭壇の自動化",
+  "icon": "the_vault:altar_conduit",
+  "category": "patchouli:game_mechanics_category",
+  "read_by_default": "true",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l:getting_started/vault_crystal)$(t:ヴォールト祭壇)$(l)ヴォールト祭壇$()の完成を自動化するには$(l:skills/researches)$(l)研究$()が必要。$(br2)$(l)祭壇導管$()をクラフトすると、$(l)Refined Storage$()または$(l)Applied Energistics$()の$(l)コントローラー$()に設置して接続できる。$(br2)プレイヤー1人につき機能する祭壇導管は$(l)1つ$()のみ。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "vaultintegrations:altar_conduit",
+      "title": "祭壇導管",
+      "text": "接続すると、祭壇導管をヴォールト祭壇の$(l)真上$()に設置して、必要な素材で自動的に完成させられる。$(br2)$(l)ブラックリスト$()に追加したアイテムは搬送されない。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "vaultintegrations:speed_enhancement",
+      "title": "強化",
+      "text": "祭壇導管に強化を追加すると$(l)効率$()を$(l)向上$()させられる。$(br)$(li)$(l)スピード強化$()$(li2)移動速度が上昇する$(br)$(li)$(l)スタック強化$()$(li2)スタックサイズが増加する$(br)$(li)$(l)スタック強化$()$(li2)アイテムを即座に転送する"
+    },
+    {
+      "type": "patchouli:text",
+      "text": ""
+    }
+  ]
+}

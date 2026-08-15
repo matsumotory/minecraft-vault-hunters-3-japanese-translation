@@ -1,0 +1,15 @@
+{
+ "format": "path-map/1",
+ "strings": {
+  "groupDescriptions.the_vault:assassin.description[0].text": "アサシン ",
+  "groupDescriptions.the_vault:assassin.description[1].text": "は高火力で出現数が少なく、侮れない脅威となるモブの分類だ。ホードモブよりダメージのステータスが高い。",
+  "groupDescriptions.the_vault:dungeon.description[0].text": "ダンジョン ",
+  "groupDescriptions.the_vault:dungeon.description[1].text": "は通常種よりはるかに強力なモブの分類で、ダンジョンの難易度に応じて強さが変化する。",
+  "groupDescriptions.the_vault:fighter.description[0].text": "ヴォールトドゥエラー ",
+  "groupDescriptions.the_vault:fighter.description[1].text": "はヴォールトの住人で、ハードより高い難易度でプレイヤーに環境的な脅威をもたらす。",
+  "groupDescriptions.the_vault:horde.description[0].text": "ホード ",
+  "groupDescriptions.the_vault:horde.description[1].text": "は、大量かつ頻繁に出現するモブの分類で、全体的にステータスは低い。",
+  "groupDescriptions.the_vault:tank.description[0].text": "タンク ",
+  "groupDescriptions.the_vault:tank.description[1].text": "は打たれ強く、単体火力を試してくる高HPのモブの分類だ。ただし出現数はごく少なく、狙い撃ちして各個撃破できる。"
+ }
+}

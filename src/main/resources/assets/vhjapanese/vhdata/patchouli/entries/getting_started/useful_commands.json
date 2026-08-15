@@ -1,0 +1,22 @@
+{
+  "sortnum": 7,
+  "name": "便利なコマンド",
+  "icon": "supplementaries:hanging_sign_oak",
+  "category": "patchouli:getting_started_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Vault Huntersには、プレイヤーの$(l)ゲーム全体の体験$()を$(l)変更$()できるコマンドが数多く用意されている。$(br2)これらのコマンドは$(l)この本の中$()から$(l)直接$()実行できる。"
+    },
+    {
+      "type": "patchouli:relations",
+      "title": "章",
+      "entries": [
+        "patchouli:useful_commands/difficulty_commands",
+        "patchouli:useful_commands/gamerule_commands",
+        "patchouli:useful_commands/party_commands",
+        "patchouli:useful_commands/research_commands"
+      ]
+    }
+  ]
+}
