@@ -67,6 +67,10 @@ versionRange="${minecraft_version_range}"
 ordering="NONE"
 side="BOTH"
 # 翻訳対象のthe_vault (Vault Hunters本体mod)。modidは実機jarのmods.tomlで実測済み
+# versionRangeは存在だけを必須にする ([0,))。the_vaultの実バージョン文字列はMC版接頭辞つき
+# (例 1.18.2-3.21.6.6884) でMavenの範囲比較と相性が悪く、[3.21,)は実機でロード失敗した
+# (2026-08-16実測)。翻訳の対象版はmod側のバージョン (3.21.7-ja.N) が表し、版がずれても
+# 対応する訳が無い文字列が英語に戻るだけで壊れない
 # ordering=BEFORE: 本modをthe_vaultより先に構築し、コンストラクタでのconfig差し込みを
 # the_vaultのconfig読みに先行させる (実機ログで検証する)
 # VaultPatcher (ASM版) はmods.tomlを持たずForgeのmodidが無いため、ここでは宣言できない。
@@ -74,6 +78,6 @@ side="BOTH"
 [[dependencies.${mod_id}]]
 modId="the_vault"
 mandatory=true
-versionRange="[3.21,)"
+versionRange="[0,)"
 ordering="BEFORE"
 side="BOTH"
