@@ -2,7 +2,7 @@
 
 Minecraftのmodpack「Vault Hunters 3rd Edition」(Minecraft 1.18.2 / Forge) を日本語で遊べるようにする、非公式の翻訳modです。訳文だけを同梱していて、原作のゲームデータは再配布していません。
 
-**ダウンロード**: [GitHub Releases](https://github.com/matsumotory/minecraft-vault-hunters-3-japanese-translation/releases) / CurseForge (審査が終わりしだいリンクを載せます)
+**ダウンロード**: [CurseForge](https://www.curseforge.com/minecraft/mc-mods/vault-hunters-3-japanese-translation) (おすすめ。アプリから自動導入できます) / [GitHub Releases](https://github.com/matsumotory/minecraft-vault-hunters-3-japanese-translation/releases)
 
 **English documentation** (including the rights and takedown policy): [README.en.md](README.en.md)
 

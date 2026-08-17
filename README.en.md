@@ -2,7 +2,7 @@
 
 Unofficial Japanese localization companion mod for the Vault Hunters 3rd Edition modpack (Minecraft 1.18.2 / Forge). It ships translations only and never redistributes original game content.
 
-**Downloads**: [GitHub Releases](https://github.com/matsumotory/minecraft-vault-hunters-3-japanese-translation/releases) / CurseForge (link will be added after review)
+**Downloads**: [CurseForge](https://www.curseforge.com/minecraft/mc-mods/vault-hunters-3-japanese-translation) (recommended; the app installs everything automatically) / [GitHub Releases](https://github.com/matsumotory/minecraft-vault-hunters-3-japanese-translation/releases)
 
 **日本語のドキュメントはこちら**: [README.md](README.md)
 
