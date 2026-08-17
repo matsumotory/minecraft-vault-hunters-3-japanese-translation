@@ -16,7 +16,7 @@ Unofficial Japanese localization for the Vault Hunters 3rd Edition modpack (Mine
 
 WHAT GETS TRANSLATED: item, block and tooltip strings, skill / ability / quest descriptions (config text; original numeric values are kept untouched, zero balance changes), hardcoded UI strings (replaced at runtime via VaultPatcher), and the in-game guidebook. Roughly 15,000 display strings in total.
 
-INSTALL: install this project from the CurseForge App; VaultPatcher is installed automatically as a required dependency. Untranslated strings simply stay in English, so the game never breaks. Some names intentionally remain in English because they double as internal identifiers (ability / talent names, god names, stat labels); translating them would break the game, so we don't. Note: the hardcoded-UI layer activates from the SECOND launch after installing (everything else is translated from the first launch).
+INSTALL: install this project from the CurseForge App; VaultPatcher is installed automatically as a required dependency. Then launch the game once, quit, and launch it again: the hardcoded UI translations activate on the second launch, and everything else works from the first launch. Untranslated strings simply stay in English, so the game never breaks. Some names intentionally remain in English because they double as internal identifiers (ability / talent names, god names, stat labels); translating them would break the game, so we don't. Setup steps with screenshots: https://github.com/matsumotory/minecraft-vault-hunters-3-japanese-translation
 
 TARGET VERSION: Vault Hunters 3rd Edition 3.21.7. We keep tracking modpack updates.
 
@@ -29,7 +29,7 @@ Vault Hunters 3rd Edition (Minecraft 1.18.2 / Forge) を日本語で遊べるよ
 
 このmodを入れると、アイテム名、スキルやクエストの説明文、画面に直接書き込まれたUIの文字、ゲーム内ガイドブックの合計約15,000件が日本語になります。ゲームバランスの数値には一切触れません。必要なVaultPatcherは、依存modとして自動で一緒に入ります。
 
-画面に直接書き込まれた文字だけは、導入後2回目の起動から日本語になります (VaultPatcherが起動のいちばん最初に設定を読むためです)。翻訳が無い文字列は英語のまま表示され、ゲームは壊れません。アビリティ名や神の名前など一部の名前は、ゲーム内部の識別子を兼ねているため、意図して英語のまま残しています。
+導入したら、ゲームを1回起動して終了し、もう一度起動してください。画面に直接書き込まれた文字の翻訳は、2回目の起動から効きます (VaultPatcherが起動のいちばん最初に設定を読むためです)。スクリーンショットつきの導入手順と確認方法は、GitHubのREADMEにあります。翻訳が無い文字列は英語のまま表示され、ゲームは壊れません。アビリティ名や神の名前など一部の名前は、ゲーム内部の識別子を兼ねているため、意図して英語のまま残しています。
 
 非公式・非収益のファンプロジェクトです。権利者から要請があれば配布を取り下げます。誤訳や不具合は、上のGitHubリンクから日本語で報告してください。
 ```
