@@ -41,5 +41,6 @@ Minecraftのmodpack「Vault Hunters 3rd Edition」(Minecraft 1.18.2、Forge) を
 ## 5. 作業の仕方
 
 - セッションの作業は`.claude/worktrees/`配下の隔離worktreeで行い、主たる作業コピーを直接書き換えない。参照の前に`git fetch origin main`する
+- リリース (版上げ、ビルド、実機検証、GitHub Release、CurseForgeアップロード) は`.claude/skills/release-pipeline/`の手順で行う
 - 文書は現在形に保ち、履歴はgitに任せる。作業状態はHANDOFF.mdへ書く。決まった方針はその場で本ファイルへ焼き、文脈を会話に置き去りにしない
 - 本人にしか決められないこと (アカウントの操作、費用、公開の判断) だけ確認し、それ以外は推奨を添えて自走する

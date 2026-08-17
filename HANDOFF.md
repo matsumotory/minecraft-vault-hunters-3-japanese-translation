@@ -4,7 +4,7 @@
 
 ## 現在地 (2026-08-17)
 
-- **3.21.7-ja.2の実装と実機検証が完了。GitHub ReleaseとCurseForgeへのファイル追加 (本人操作) を待っている状態**
+- **3.21.7-ja.2は配布まで完了 (2026-08-17)**: GitHub Release 3.21.7-ja.2 (タグ+jar添付) をAPIで作成済み。CurseForgeへも公式Upload APIでファイル追加済み (ファイルID 8669392、モデレーション審査待ち。承認されると公開ページに出る)。**残る本人操作はCurseForgeのDescriptionの【入れかた】/INSTALL段落の差し替えだけ** (正はdocs/curseforge-description.md。編集APIが無いため手作業)
 - ja.2の内容: CurseForge経由のまっさら導入でハードコード層だけが効かない問題の修正。原因は、依存解決が配る現行VaultPatcher (全ローダー版1.5系) がモジュール一覧をconfig.jsonの"modules"キーから読むのに対し、ja.1は旧1.2系の"mods"キーだけを書いていたこと。修正は (1) config.jsonへ新旧両キーを書く (テンプレートとマージ処理の両方)、(2) モジュール本体を旧位置 config/vaultpatcher_asm/ と新位置 <ゲームdir>/vaultpatcher/modules/ の両方へ配置する (1.5系は一度移行したら新位置しか見ないため、訳の更新も新位置の上書きで伝搬させる)。VaultPatcherの系統仕様の実測は翻訳作業側リポジトリのdocs/調査結果.md第4節が正
 - ja.2の実機検証 (2026-08-17): まっさらE2E (インスタンス削除→CFアプリでmodpack再インストール→アプリ内検索から本modインストール→VaultPatcher 1.5.3自動導入) の後、VaultPatcher関連状態を白紙化してja.2 jarで2回起動し、(1) 1回目起動でconfig.json両キー+モジュール両位置の配置 (適用187ms)、(2) 2回目起動でクリスタルツールチップの日本語化 (レベル/容量/目標/テーマ/レイアウト) とクエストブックのハードコード部分 (クエスト概要/説明:/未達成) を画面で確認。FATAL 0、冪等性も確認 (再起動で書き込みゼロ)
 - E2Eで見つけたREADMEの欠落2点も修正済み: (1) 新規プロファイルは「コンテンツ管理の許可」が既定オフでmodを追加できない (手順3に有効化手順を追加)、(2) 言語設定を1回目起動のあいだに行う順序へ手順4を組み替え (本人の指摘)。README.en.mdとdocs/curseforge-description.mdにも同じ変更を反映済み
@@ -12,7 +12,7 @@
 
 ## 次の作業 (順番どおり)
 
-1. 本人操作: GitHub Releaseの作成 (タグ3.21.7-ja.2、検証済みjarを添付) と、CurseForgeへのファイル追加 (Game Version 1.18.2+Forge、Release種別、ChangelogはCHANGELOG.mdのja.2節を貼る)。Descriptionの【入れかた】もdocs/curseforge-description.mdの最新へ差し替える
+1. 本人操作: CurseForgeのDescriptionの【入れかた】(日本語) とINSTALL (英語) の2段落を、docs/curseforge-description.mdの最新へ差し替える (編集APIが無いため手作業)。ja.2ファイルの審査結果もあわせて確認する
 2. 次版 (ja.3) の候補機能: 初回起動の適用が終わったら、ゲーム内 (タイトル画面のトースト等) で「再起動すると翻訳がすべて有効になります」と利用者へ通知する。1回目の起動のまま遊び続ける利用者をなくすため (2026-08-17の本人の指摘。READMEは再起動を手順に組み込む形で対応済み)
 3. modpack更新 (3.21.8以降やRemastered対応) が来たら、翻訳作業側で差分を訳してから、生成スクリプトでこちらへ取り込み、バージョンを上げて配布する
 
@@ -21,6 +21,7 @@
 ## 決まっていること
 
 - 名前: Vault Hunters 3 Japanese Translation (日本語化)。CurseForgeスラッグ vault-hunters-3-japanese-translation、modid vhjapanese。GitHubリポジトリ名は手元のリポジトリ群の慣行に合わせminecraft-接頭辞つき (2026-08-15の本人指示)
+- バージョンの規則: `<対象modpackバージョン>-ja.<N>` (例 3.21.7-ja.2)。利用者に唯一重要な互換性情報 (どのmodpack版向けか) を名前の先頭で伝える。Nは同一modpack対象内の通し番号で、修正も訳の改善も区別せず上げる (何が変わったかはCHANGELOGが担う)。対象modpackが変わったら先頭を変えてNを1へ戻す (例 3.21.8-ja.1)。並行メンテも名前空間が分かれる。the_vault本体の`1.18.2-3.21.6.6884`と同型の慣行。CurseForgeのメタデータはMinecraft 1.18.2までしか表せないため、modpack版はファイル名でしか伝わらない (2026-08-17整理)
 - 対象: modpack 3.21.7 (Forge 1.18.2-40.3.11)
 - 権利の姿勢: 非公式・非収益・訳文のみ・権利者の要請があれば取り下げ (CLAUDE.md第2節)
 - VaultPatcherはどの系統でも動くよう設定を二重化する。1.2系 (forge-asm、GitHubのみ) は"mods"キーとconfig/vaultpatcher_asm/を読む。現行1.5系 (CurseForgeの依存解決が配る全ローダー版。Forge 1.18.2で動作することを2026-08-17実機確認) は"modules"キーとvaultpatcher/modules/を読む。どちらもmods.tomlのmodidを持たない (TransformationService型) ため依存はCurseForgeのRequired Dependency宣言で表現し、本modはVaultPatcher不在でもlang層とconfig層が動く設計にする
