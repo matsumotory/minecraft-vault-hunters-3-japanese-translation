@@ -29,6 +29,7 @@ Minecraftのmodpack「Vault Hunters 3rd Edition」(Minecraft 1.18.2、Forge) を
 ## 4. 公開基準 (このリポジトリはpublic)
 
 - trackedファイルとコミット履歴に、個人情報、ローカルの絶対パス、他の非公開プロジェクトの名前、内部の作業環境の詳細を書かない。翻訳の作業環境に触れるときは「別の作業環境」の一般形で書く
+- 文書 (.md) にemdashとendash (U+2014、U+2013) を使わない (機械生成臭のする記号を公開文面に残さない。check_publish_safety.pyが門。同梱の翻訳データは対象外)
 - コミット前に必ず`python scripts/check_publish_safety.py && git commit`の形で機械検査を&&で直結する。素のgrepを門に使わない (grepはヒットで終了コード0を返すため、&&直結だと見つかったのに通る逆向きの門になる)
 - 検査に足す内部の固有名は、tracked のスクリプトではなくgit管理外のprivate-patterns.local.txtへ書く (禁止リスト自体を公開しない設計)
 - 公開範囲を変える操作 (public切替) の前に、`python scripts/check_publish_safety.py --history`で全コミット履歴も検査する

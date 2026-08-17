@@ -34,6 +34,13 @@ PATTERNS = [
     re.compile(r"/home/(?![<*])[A-Za-z0-9_.-]+"),
 ]
 
+# 文書 (.md) 限定の追加パターン。emdash/endashは機械生成臭のする記号なので
+# 公開文面に使わない (2026-08-16の決まり)。同梱の翻訳データは対象外
+# (原文一致用の文字列は変更禁止のため)。履歴検査には適用しない (過去版へ遡及しない)
+DOC_PATTERNS = [
+    re.compile("[–—]"),
+]
+
 
 def load_local_patterns() -> list:
     extra = REPO_ROOT / "private-patterns.local.txt"
@@ -68,8 +75,9 @@ def scan_files(patterns: list) -> tuple:
             continue  # バイナリは対象外
         checked += 1
         rel = path.relative_to(REPO_ROOT)
+        active = patterns + DOC_PATTERNS if path.suffix.lower() == ".md" else patterns
         for i, line in enumerate(text.splitlines(), start=1):
-            for pat in patterns:
+            for pat in active:
                 m = pat.search(line)
                 if m:
                     hits.append(f"{rel}:{i}: {m.group(0)}")
