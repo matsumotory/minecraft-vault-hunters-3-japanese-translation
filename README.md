@@ -13,22 +13,44 @@ Vault Huntersは、スキルやクエストの説明文の多くをmod独自の�
 - 画面に直接書き込まれたUIの文字 (VaultPatcherというmodが実行時に置き換えます)
 - ゲーム内ガイドブック
 
-## 入れかた (CurseForgeアプリ)
+## Vault Huntersとは (このmodの前提)
 
-2回起動するところまでが導入の手順です。順番どおりに進めてください。
+このmodは、Vault Hunters 3rd Edition専用の翻訳modです。単体では何もしないので、先にVault Hunters本体を導入してください。
 
-1. CurseForgeアプリでVault Hunters Third Editionのプロファイルを開き、「コンテンツを追加する (Add More Content)」を押します
+Vault Hunters 3rd Editionは、Iskall85Teamが制作した大型のmodpackです。「ヴォールト」と呼ばれるダンジョンへ潜って宝を集め、スキルやタレントを育てて、自分だけのビルドを作っていく、RPGのような遊びかたのMinecraftです。CurseForgeで無料で配布されていて、遊ぶにはMinecraft Java版 (製品版) が必要です。
+
+## 導入の全体像
+
+すでにVault Huntersで遊んでいる方は、手順3の「このmodを追加する」から始めてください。はじめての方は、手順1から順に進めます。
+
+### 手順1: CurseForgeアプリを入れる
+
+1. [CurseForgeアプリ](https://www.curseforge.com/download/app) をダウンロードして、インストールします
+2. アプリを起動して、ゲームの一覧からMinecraftを選びます
+
+### 手順2: Vault Hunters本体を入れる
+
+1. アプリの検索で、Modpacksから「Vault Hunters」を検索します
+2. 「Vault Hunters Third Edition」(作者: Iskall85Team) をインストールします。初回はダウンロードに時間がかかります
+3. 一度「プレイ」で起動して、タイトル画面が出ることを確かめたら、終了します
+
+### 手順3: このmodを追加する
+
+1. Vault Hunters Third Editionのプロファイルを開き、「コンテンツを追加する (Add More Content)」を押します
 2. 「Vault Hunters 3 Japanese Translation」を検索して、インストールします。必要なVaultPatcherは、依存modとして自動で一緒に入ります
-3. ゲームを起動します。この1回目の起動で、modが翻訳データをmodpackの中へ配置します
-4. **ゲームをいったん終了して、もう一度起動します。** 画面に直接書き込まれたUIの文字の翻訳は、この2回目の起動から効きます (VaultPatcherが、ゲーム起動のいちばん最初に翻訳の設定を読むためです)
-5. 次の「日本語になっているかの確認」で、翻訳が効いていることを確かめます
 
-## 入れかた (手動)
+### 手順4: 2回起動する
+
+1. ゲームを起動します。この1回目の起動で、modが翻訳データをmodpackの中へ配置します
+2. **ゲームをいったん終了して、もう一度起動します。** 画面に直接書き込まれたUIの文字の翻訳は、この2回目の起動から効きます (VaultPatcherが、ゲーム起動のいちばん最初に翻訳の設定を読むためです)
+3. 次の「日本語になっているかの確認」で、翻訳が効いていることを確かめます
+
+### 手動で入れる場合 (CurseForgeアプリを使わないとき)
 
 1. [GitHub Releases](https://github.com/matsumotory/minecraft-vault-hunters-3-japanese-translation/releases) から `vhjapanese-*.jar` をダウンロードします
 2. [VaultPatcher](https://www.curseforge.com/minecraft/mc-mods/vaultpatcher) のForge 1.18.2向けASM版もダウンロードします
 3. 2つのjarを、インスタンスの `mods` フォルダへ入れます
-4. CurseForgeアプリの場合と同じく、**ゲームを1回起動して終了し、もう一度起動します**
+4. 同じく、ゲームを1回起動して終了し、もう一度起動します
 
 ## 日本語になっているかの確認
 
@@ -73,8 +95,8 @@ Vault Huntersは、スキルやクエストの説明文の多くをmod独自の�
 
 - Vault Huntersとthe_vaultは、Team Iskallia (85 Entertainment AB) の著作物です (All Rights Reserved)。このmodは非公式・非収益のファンプロジェクトで、原作のデータを複製していません。権利者から要請があれば、配布を取り下げます
 - 日本語訳の一部は、MITライセンスの先行翻訳 [suzu2469/vault_hunter_lang_jp](https://github.com/suzu2469/vault_hunter_lang_jp) を土台にしています。どの部分がどれだけ先行翻訳に由来するかは、[NOTICE.md](NOTICE.md) の表に書いてあります
-- このmodの実装と、当方が作成した訳文は、MITライセンスです ([LICENSE](LICENSE))
+- このmodの実装と、作者matsumotory (まつもとりー) が作成した訳文は、MITライセンスです ([LICENSE](LICENSE))
 
 ## English summary
 
-Unofficial Japanese localization companion mod for the Vault Hunters 3rd Edition modpack (Minecraft 1.18.2 / Forge). Translations only; no original game content is redistributed. Install it from CurseForge and VaultPatcher will be pulled in automatically as a required dependency. After installing, launch the game once, quit, and launch it again: the hardcoded UI translations activate on the second launch, and everything else works from the first launch. Untranslated strings simply stay in English. Non-commercial fan project; we will take it down if the rights holder requests it. Our own work is MIT licensed. Parts build on the MIT licensed community translation by suzu2469 (see [NOTICE.md](NOTICE.md)).
+Unofficial Japanese localization companion mod for the Vault Hunters 3rd Edition modpack (Minecraft 1.18.2 / Forge). Translations only; no original game content is redistributed. Requires the Vault Hunters 3rd Edition modpack. Install it from CurseForge and VaultPatcher will be pulled in automatically as a required dependency. After installing, launch the game once, quit, and launch it again: the hardcoded UI translations activate on the second launch, and everything else works from the first launch. Untranslated strings simply stay in English. Non-commercial fan project; we will take it down if the rights holder requests it. Our own work is MIT licensed. Parts build on the MIT licensed community translation by suzu2469 (see [NOTICE.md](NOTICE.md)).
