@@ -49,3 +49,45 @@ Vault Huntersとthe_vaultは、Team Iskallia (85 Entertainment AB) の著作物�
 ## matsumotoryが作成した部分のライセンス
 
 mod実装、matsumotoryが作成した訳文、文書は、MIT Licenseです ([LICENSE](LICENSE))。
+
+## English
+
+### About the original work
+
+Vault Hunters and the_vault are the property of Team Iskallia (85 Entertainment AB), All Rights Reserved. This repository and the distributed files contain no copies of the original work (no jars, no mods, no full original config files, no English text corpus). They contain the Japanese translations plus only the minimal references technically required to apply them: lang key names, config JSON paths, and the original English strings that VaultPatcher needs in order to match its replacement targets. If the rights holder requests it, we will take the distribution down. See "For the rights holder" in [README.en.md](README.en.md) for the contact route.
+
+### Where the translation comes from
+
+The translation was written by matsumotory, the author of this mod. It builds on the MIT licensed prior project [suzu2469/vault_hunter_lang_jp](https://github.com/suzu2469/vault_hunter_lang_jp), but the prior work was not simply imported. The process was:
+
+1. First, every string was translated from the English original without looking at the prior translation (the from-scratch translation)
+2. Then the from-scratch translation and the prior translation were compared string by string; where they differed, the better one was adopted
+3. Every string, including the adopted ones, went through an audit, and mistranslations and awkward literal wording were fixed with the reasons recorded
+
+The results are counted in three categories:
+
+- **Adopted from the prior work**: the two translations differed and the prior one was judged better. Only these count as coming from the prior work
+- **Independent match**: the from-scratch translation arrived at the same wording as the prior one. These are not counted as adoption, because matsumotory reached the same conclusion independently
+- **matsumotory's translation**: strings where the from-scratch translation won the comparison, strings rewritten in the audit, and strings the prior work never covered
+
+Measured breakdown (machine counted on 2026-08-11):
+
+| Target | Total | Adopted from prior work | Independent match | matsumotory's translation |
+|---|---|---|---|---|
+| lang strings such as item names (the_vault) | 2,359 keys | 423 (17.9%) | 1,001 (42.4%) | 935 (39.6%) |
+| lang strings (9 minecraft keys) | 9 keys | 9 (provisional; too few for the comparison) | - | - |
+| Skill and quest descriptions (config) | 8,036 strings | 2,019 (25.1%) | - | 6,017 (74.9%): 2,589 where the from-scratch translation replaced the prior one, plus 3,428 newly translated strings the prior work never covered |
+| In-game guidebook display text | 419 | 39 (9.3%) | 131 (31.3%) | 249 (59.4%) |
+| Hardcoded UI strings (about 3,600 replacements) | about 3,600 | 0 | - | all of them; the prior project did not cover this layer |
+| Mod code, build and validation tooling, documents | - | - | - | all by matsumotory |
+
+In total, out of roughly 14,900 display strings, about 2,490 (about 17 percent) are adopted from the prior work. The remaining about 83 percent is matsumotory's from-scratch translation, and about 1,100 of those independently matched the prior wording. Beyond the numbers, the prior work made a large contribution as the foundation of the terminology: several core terms were carried over from suzu2469's established wording after verification. We state this respect here and in the MIT attribution.
+
+### Not bundled
+
+- VaultPatcher (by 3093FengMing, GPLv3) is not bundled. It is declared as a required dependency, and the distribution platform installs it into the user's environment
+- The other language translations bundled in the original jar were used only as references for terminology decisions; none of their content is reused
+
+### License of matsumotory's work
+
+The mod code, the translations written by matsumotory, and the documents are MIT licensed ([LICENSE](LICENSE)).

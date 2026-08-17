@@ -4,6 +4,8 @@ Minecraftのmodpack「Vault Hunters 3rd Edition」(Minecraft 1.18.2 / Forge) を
 
 **ダウンロード**: [GitHub Releases](https://github.com/matsumotory/minecraft-vault-hunters-3-japanese-translation/releases) / CurseForge (審査が終わりしだいリンクを載せます)
 
+**English documentation** (including the rights and takedown policy): [README.en.md](README.en.md)
+
 ## これは何ですか
 
 Vault Huntersは、スキルやクエストの説明文の多くをmod独自の場所に持っています。そのため、Minecraftの言語設定を日本語にしても、大部分が英語のまま残ります。このmodを入れると、次の表示文字列 約15,000件が日本語になります。
@@ -97,6 +99,6 @@ Vault Hunters 3rd Editionは、Iskall85Teamが制作した大型のmodpackです
 - 日本語訳の一部は、MITライセンスの先行翻訳 [suzu2469/vault_hunter_lang_jp](https://github.com/suzu2469/vault_hunter_lang_jp) を土台にしています。どの部分がどれだけ先行翻訳に由来するかは、[NOTICE.md](NOTICE.md) の表に書いてあります
 - このmodの実装と、作者matsumotory (まつもとりー) が作成した訳文は、MITライセンスです ([LICENSE](LICENSE))
 
-## English summary
+## English
 
-Unofficial Japanese localization companion mod for the Vault Hunters 3rd Edition modpack (Minecraft 1.18.2 / Forge). Translations only; no original game content is redistributed. Requires the Vault Hunters 3rd Edition modpack. Install it from CurseForge and VaultPatcher will be pulled in automatically as a required dependency. After installing, launch the game once, quit, and launch it again: the hardcoded UI translations activate on the second launch, and everything else works from the first launch. Untranslated strings simply stay in English. Non-commercial fan project; we will take it down if the rights holder requests it. Our own work is MIT licensed. Parts build on the MIT licensed community translation by suzu2469 (see [NOTICE.md](NOTICE.md)).
+Full English documentation, including the rights and takedown policy, is in [README.en.md](README.en.md).

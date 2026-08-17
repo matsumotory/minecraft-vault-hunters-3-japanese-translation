@@ -35,7 +35,7 @@ Minecraftのmodpack「Vault Hunters 3rd Edition」(Minecraft 1.18.2、Forge) を
 - 検査に足す内部の固有名は、tracked のスクリプトではなくgit管理外のprivate-patterns.local.txtへ書く (禁止リスト自体を公開しない設計)
 - 公開範囲を変える操作 (public切替) の前に、`python scripts/check_publish_safety.py --history`で全コミット履歴も検査する
 - コミットメッセージは日本語で厚く書く。何を変えたかに加えて、なぜか、何を確かめたかを書く。公開基準が厚さに優先する
-- READMEは日英両方を持つ
+- READMEは日本語 (README.md) と英語 (README.en.md) の両方を持ち、冒頭で相互にリンクする。権利・帰属・取り下げの内容は日英で同等に読めるようにし、NOTICEは日英併記にする。英語側には権利者向けの連絡先の節 (For the rights holder) を必ず置く (権利者が読む場所と導線を英語で用意する。2026-08-17の本人の指示)
 
 ## 5. 作業の仕方
 
