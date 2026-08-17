@@ -41,7 +41,7 @@ final class TranslationInstaller {
         Path gameDir = FMLPaths.GAMEDIR.get();
         Path configDir = FMLPaths.CONFIGDIR.get();
         installPatchouli(index, gameDir);
-        installVaultPatcher(configDir);
+        installVaultPatcher(configDir, gameDir);
         mergeConfigs(index, configDir);
     }
 
@@ -72,7 +72,12 @@ final class TranslationInstaller {
     }
 
     // ---- ハードコード層 (VaultPatcher設定の供給) ----
-    private static void installVaultPatcher(Path configDir) {
+    // VaultPatcherは系統で設定の読み方が違う。1.2系 (forge-asm) はconfig/vaultpatcher_asm/の
+    // config.jsonの"mods"キーとモジュール本体を読む。CurseForgeの依存解決が配る全ローダー版
+    // 1.5系は、同じconfig.jsonの"modules"キーを読み、モジュール本体は<ゲームdir>/vaultpatcher/
+    // modules/から読む (旧位置からは新位置に無いときだけ一度きり移行し、以後は新位置だけを見る)。
+    // 互いに知らないキーと場所は無視されるため、両方の系統ぶんを常に供給する。
+    private static void installVaultPatcher(Path configDir, Path gameDir) {
         try {
             Path dir = configDir.resolve("vaultpatcher_asm");
             Files.createDirectories(dir);
@@ -80,8 +85,21 @@ final class TranslationInstaller {
 
             byte[] module = readResourceBytes("vaultpatcher/" + VP_MODULE + ".json");
             Path moduleDest = dir.resolve(VP_MODULE + ".json");
+            boolean moduleRefreshed = false;
             if (!Files.isRegularFile(moduleDest) || !Arrays.equals(Files.readAllBytes(moduleDest), module)) {
                 Files.write(moduleDest, module);
+                moduleRefreshed = true;
+                changed = true;
+            }
+
+            // 1.5系が読む新位置。訳を更新したときは上書きしないと新位置の古いコピーが
+            // 読まれ続ける。VaultPatcherが新形式へ変換してこのファイルを書き換えるため、
+            // 内容比較はせず「こちらが更新したときだけ」上書きする
+            Path newDir = gameDir.resolve("vaultpatcher").resolve("modules");
+            Path newDest = newDir.resolve(VP_MODULE + ".json");
+            if (moduleRefreshed || !Files.isRegularFile(newDest)) {
+                Files.createDirectories(newDir);
+                Files.write(newDest, module);
                 changed = true;
             }
 
@@ -93,20 +111,9 @@ final class TranslationInstaller {
                 JsonObject obj = JsonParser
                         .parseString(new String(Files.readAllBytes(cfg), StandardCharsets.UTF_8))
                         .getAsJsonObject();
-                JsonArray mods = obj.getAsJsonArray("mods");
-                if (mods == null) {
-                    mods = new JsonArray();
-                    obj.add("mods", mods);
-                }
-                boolean present = false;
-                for (JsonElement m : mods) {
-                    if (m.isJsonPrimitive() && VP_MODULE.equals(m.getAsString())) {
-                        present = true;
-                        break;
-                    }
-                }
-                if (!present) {
-                    mods.add(VP_MODULE);
+                boolean edited = ensureModuleListed(obj, "mods");
+                edited |= ensureModuleListed(obj, "modules");
+                if (edited) {
                     Files.write(cfg, (AsciiJson.write(obj) + "\n").getBytes(StandardCharsets.UTF_8));
                     changed = true;
                 }
@@ -119,6 +126,22 @@ final class TranslationInstaller {
         } catch (Exception e) {
             LOGGER.warn("[vhjapanese] VaultPatcher設定の配置に失敗 (ハードコード層は英語のまま): {}", e.toString());
         }
+    }
+
+    // config.jsonの指定キーの配列にモジュール名を保証する。書き換えたらtrue
+    private static boolean ensureModuleListed(JsonObject obj, String key) {
+        JsonArray arr = obj.getAsJsonArray(key);
+        if (arr == null) {
+            arr = new JsonArray();
+            obj.add(key, arr);
+        }
+        for (JsonElement m : arr) {
+            if (m.isJsonPrimitive() && VP_MODULE.equals(m.getAsString())) {
+                return false;
+            }
+        }
+        arr.add(VP_MODULE);
+        return true;
     }
 
     // ---- config層 (手元の英語configへ訳文を差し込む) ----

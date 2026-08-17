@@ -38,39 +38,39 @@ Vault Hunters 3rd Editionは、Iskall85Teamが制作した大型のmodpackです
 
 ### 手順3: このmodを追加する
 
-1. Vault Hunters Third Editionのプロファイルを開き、「コンテンツを追加する (Add More Content)」を押します
-2. 「Vault Hunters 3 Japanese Translation」を検索して、インストールします。必要なVaultPatcherは、依存modとして自動で一緒に入ります
+1. まず、プロファイルへmodを追加できるようにします。「所有済みModpack」で「Vault Hunters Third Edition」を右クリックし、「プロファイルの設定」を開いて、「このプロファイルのコンテンツ管理を許可する」にチェックを入れ、「完了」を押します (新しく入れたプロファイルでは、この設定が最初はオフになっていて、オフのままだとmodを追加できません)
+2. アプリの「探索」タブで、カテゴリをModsに切り替えて「Vault Hunters 3 Japanese Translation」を検索し、「インストール」を押します。導入先を聞かれたら「Vault Hunters Third Edition」を選びます。必要なVaultPatcherは、依存modとして自動で一緒に入ります
 
-### 手順4: 2回起動する
+### 手順4: 起動して、言語を日本語にして、もう一度起動する
 
 1. ゲームを起動します。この1回目の起動で、modが翻訳データをmodpackの中へ配置します
-2. **ゲームをいったん終了して、もう一度起動します。** 画面に直接書き込まれたUIの文字の翻訳は、この2回目の起動から効きます (VaultPatcherが、ゲーム起動のいちばん最初に翻訳の設定を読むためです)
-3. 次の「日本語になっているかの確認」で、翻訳が効いていることを確かめます
+2. そのまま、Minecraftの言語を日本語へ変えます。タイトル画面の「Options...」を開くと、次の画面になります。
+
+   ![設定画面](docs/images/options-screen.png)
+
+   この中の「Language...」を開き、一覧から「日本語 (日本)」を選んで「完了」(Done) を押します。
+
+   ![言語設定で日本語 (日本) を選んだ様子](docs/images/language-japanese.png)
+
+3. **ゲームをいったん終了して、もう一度起動します。** 画面に直接書き込まれたUIの文字の翻訳は、この2回目の起動から効きます (VaultPatcherが、ゲーム起動のいちばん最初に翻訳の設定を読むためです)
+4. 次の「日本語になっているかの確認」で、翻訳が効いていることを確かめます
 
 ### 手動で入れる場合 (CurseForgeアプリを使わないとき)
 
 1. [GitHub Releases](https://github.com/matsumotory/minecraft-vault-hunters-3-japanese-translation/releases) から `vhjapanese-*.jar` をダウンロードします
-2. [VaultPatcher](https://www.curseforge.com/minecraft/mc-mods/vault-patcher) のForge 1.18.2向けASM版もダウンロードします
+2. [VaultPatcher](https://www.curseforge.com/minecraft/mc-mods/vault-patcher) の最新版 (`vaultpatcher-all-*.jar`) もダウンロードします
 3. 2つのjarを、インスタンスの `mods` フォルダへ入れます
-4. 同じく、ゲームを1回起動して終了し、もう一度起動します
+4. 同じく、ゲームを1回起動して言語を日本語にし、終了して、もう一度起動します
 
 ## 日本語になっているかの確認
 
-3つの画面で確かめられます。
+2つの画面で確かめられます。
 
 **1. タイトル画面** : メニューが「シングルプレイ」「マルチプレイ」と日本語になっていることを確かめます。
 
 ![タイトル画面が日本語になっている様子](docs/images/title-japanese.png)
 
-**2. 言語設定** : タイトル画面が英語のままのときは、Minecraftの言語設定が日本語になっていません。タイトル画面の「設定...」(Options...) を開くと、次の画面になります。
-
-![設定画面](docs/images/options-screen.png)
-
-この中の「言語設定...」(Language...) を開き、一覧から「日本語 (日本)」を選んで「完了」を押します。
-
-![言語設定で日本語 (日本) を選んだ様子](docs/images/language-japanese.png)
-
-**3. クエストブック** : ワールドに入り、最初から持っているクエストブックを手に持って右クリックします。クエストの一覧と説明文が次のように日本語になっていれば、翻訳は正しく動いています。
+**2. クエストブック** : ワールドに入り、最初から持っているクエストブックを手に持って右クリックします。クエストの一覧と説明文が次のように日本語になっていれば、翻訳は正しく動いています。
 
 ![クエストブックが日本語になっている様子](docs/images/quest-book-japanese.png)
 
@@ -78,11 +78,12 @@ Vault Hunters 3rd Editionは、Iskall85Teamが制作した大型のmodpackです
 
 上から順に確かめてください。
 
-1. **タイトル画面のメニューが英語のまま**: Minecraftの言語設定が日本語になっていません。上の「2. 言語設定」の手順で「日本語 (日本)」を選んでください
+1. **タイトル画面のメニューが英語のまま**: Minecraftの言語設定が日本語になっていません。手順4の2のとおり「日本語 (日本)」を選んでください
 2. **アイテム名やクエストは日本語なのに、統計画面の項目名や一部のボタンだけ英語**: まだ1回目の起動です。ゲームを終了して、もう一度起動してください
-3. **手動で入れたのに、すべて英語のまま**: `mods` フォルダに `vhjapanese-*.jar` と `vaultpatcher-*.jar` の2つが入っているか確かめてください
-4. **アビリティ名 (Fireballなど)、神の名前 (Velaraなど)、統計画面の6つのラベル (Armorなど) が英語**: 故障ではありません。これらの名前はゲーム内部の識別子を兼ねていて、翻訳するとゲームが起動しなくなることを実機で確認したため、意図して英語のまま残しています
-5. **それでも直らないとき**: [GitHub Issues](https://github.com/matsumotory/minecraft-vault-hunters-3-japanese-translation/issues) へ日本語で報告してください。インスタンスの `logs/latest.log` を添付してもらえると、原因をすぐに調べられます
+3. **2回起動しても、クリスタルのツールチップ (レベル、容量など) や統計画面だけ英語のまま**: 古いバージョン (3.21.7-ja.1) の既知の問題です。このmodを3.21.7-ja.2以降へ更新して、もう一度2回起動してください
+4. **手動で入れたのに、すべて英語のまま**: `mods` フォルダに `vhjapanese-*.jar` と `vaultpatcher-*.jar` の2つが入っているか確かめてください
+5. **アビリティ名 (Fireballなど)、神の名前 (Velaraなど)、統計画面の6つのラベル (Armorなど) が英語**: 故障ではありません。これらの名前はゲーム内部の識別子を兼ねていて、翻訳するとゲームが起動しなくなることを実機で確認したため、意図して英語のまま残しています
+6. **それでも直らないとき**: [GitHub Issues](https://github.com/matsumotory/minecraft-vault-hunters-3-japanese-translation/issues) へ日本語で報告してください。インスタンスの `logs/latest.log` を添付してもらえると、原因をすぐに調べられます
 
 ## そのほかの仕様
 

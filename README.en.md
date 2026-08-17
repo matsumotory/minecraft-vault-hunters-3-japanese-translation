@@ -22,13 +22,13 @@ Vault Hunters keeps most of its skill and quest descriptions in mod specific pla
 
 ## Install
 
-1. In the CurseForge App, open your Vault Hunters Third Edition profile and click "Add More Content"
-2. Search for "Vault Hunters 3 Japanese Translation" and install it. VaultPatcher comes along automatically
+1. Allow content management for the profile first: in "My Modpacks", right-click the Vault Hunters Third Edition profile, open its profile settings, enable "Allow content management for this profile" and confirm. Freshly installed profiles have this off, and mods cannot be added while it is off
+2. In the app's search, switch the category to Mods, search for "Vault Hunters 3 Japanese Translation" and install it into the Vault Hunters Third Edition profile. VaultPatcher comes along automatically as a required dependency
 3. Launch the game once. On this first launch the mod places the translation data into the modpack
-4. Quit the game and launch it again. The hardcoded UI translations activate on this second launch; everything else works from the first launch
-5. If the game is not in Japanese yet, open Options, then Language, and select 日本語 (日本)
+4. While you are there, set the Minecraft language: open Options, then Language, and select 日本語 (日本)
+5. Quit the game and launch it again. The hardcoded UI translations activate on this second launch; everything else works from the first launch
 
-Manual install: download `vhjapanese-*.jar` from [Releases](https://github.com/matsumotory/minecraft-vault-hunters-3-japanese-translation/releases) and the Forge 1.18.2 ASM build of [VaultPatcher](https://www.curseforge.com/minecraft/mc-mods/vault-patcher), put both jars into the `mods` folder of the instance, then do the same two launches.
+Manual install: download `vhjapanese-*.jar` from [Releases](https://github.com/matsumotory/minecraft-vault-hunters-3-japanese-translation/releases) and the latest build of [VaultPatcher](https://www.curseforge.com/minecraft/mc-mods/vault-patcher) (`vaultpatcher-all-*.jar`), put both jars into the `mods` folder of the instance, then do the same two launches.
 
 ## Verify that it works
 
@@ -40,9 +40,10 @@ The title menu should show Japanese labels, and the quest book should look like 
 
 1. The title menu is still in English: the Minecraft language is not set to Japanese. Select 日本語 (日本) in Options, then Language
 2. Items and quests are in Japanese but stat labels and some buttons are not: you are still on the first launch. Quit and launch again
-3. Everything is in English after a manual install: check that both `vhjapanese-*.jar` and `vaultpatcher-*.jar` are in the `mods` folder
-4. Ability names (such as Fireball), god names (such as Velara) and six stat labels (such as Armor) stay in English: this is intentional. Those names double as internal identifiers, and translating them breaks the game (verified on a real instance)
-5. Still broken: report it on [GitHub Issues](https://github.com/matsumotory/minecraft-vault-hunters-3-japanese-translation/issues), in English or Japanese. Attaching `logs/latest.log` from the instance helps a lot
+3. Crystal tooltips (Level, Capacity and so on) and the statistics screen stay in English even after two launches: this is a known issue of version 3.21.7-ja.1. Update this mod to 3.21.7-ja.2 or later and do the two launches again
+4. Everything is in English after a manual install: check that both `vhjapanese-*.jar` and `vaultpatcher-*.jar` are in the `mods` folder
+5. Ability names (such as Fireball), god names (such as Velara) and six stat labels (such as Armor) stay in English: this is intentional. Those names double as internal identifiers, and translating them breaks the game (verified on a real instance)
+6. Still broken: report it on [GitHub Issues](https://github.com/matsumotory/minecraft-vault-hunters-3-japanese-translation/issues), in English or Japanese. Attaching `logs/latest.log` from the instance helps a lot
 
 ## Behavior notes
 

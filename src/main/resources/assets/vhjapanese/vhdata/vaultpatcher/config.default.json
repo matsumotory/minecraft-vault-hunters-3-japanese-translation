@@ -2,6 +2,9 @@
   "mods": [
     "the_vault_vp"
   ],
+  "modules": [
+    "the_vault_vp"
+  ],
   "classes": [],
   "apply_mods": [],
   "debug_mode": {
