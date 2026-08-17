@@ -1,6 +1,6 @@
 # Vault Hunters 3 Japanese Translation (日本語化)
 
-Unofficial Japanese localization companion mod for the Vault Hunters 3rd Edition modpack (Minecraft 1.18.2 / Forge). Translations only — no original game content is redistributed.
+Unofficial Japanese localization companion mod for the Vault Hunters 3rd Edition modpack (Minecraft 1.18.2 / Forge). Translations only. No original game content is redistributed.
 
 Minecraftのmodpack「Vault Hunters 3rd Edition」(1.18.2 / Forge) を日本語で遊べるようにする非公式の翻訳companion mod。訳文のみを含み、原作のコンテンツは一切再配布しない。
 
@@ -19,6 +19,6 @@ Note: the hardcoded-UI layer activates from the **second** launch after installi
 
 ## Rights / 権利
 
-Unofficial, non-commercial fan project. Vault Hunters and the_vault are the property of Team Iskallia (85 Entertainment AB, All Rights Reserved). This project ships translations only and will be taken down if the rights holder requests it. Parts of the translation build on the MIT-licensed community translation by [suzu2469/vault_hunter_lang_jp](https://github.com/suzu2469/vault_hunter_lang_jp) — see [NOTICE.md](NOTICE.md). Our own work is MIT-licensed ([LICENSE](LICENSE)).
+Unofficial, non-commercial fan project. Vault Hunters and the_vault are the property of Team Iskallia (85 Entertainment AB, All Rights Reserved). This project ships translations only and will be taken down if the rights holder requests it. Parts of the translation build on the MIT-licensed community translation by [suzu2469/vault_hunter_lang_jp](https://github.com/suzu2469/vault_hunter_lang_jp). Attribution details: [NOTICE.md](NOTICE.md). Our own work is MIT-licensed ([LICENSE](LICENSE)).
 
 非公式・非収益のファンプロジェクト。原作の権利はTeam Iskalliaに帰属し、権利者の要請があれば配布を取り下げる。帰属の正は [NOTICE.md](NOTICE.md)。

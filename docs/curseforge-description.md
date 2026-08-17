@@ -6,21 +6,21 @@ Summaryは英語のみ (CurseForgeの要件)。Descriptionは英語必須+日本
 ## Summary
 
 ```
-Unofficial Japanese localization for the Vault Hunters 3rd Edition modpack. Translations only — no original content redistributed.
+Unofficial Japanese localization for the Vault Hunters 3rd Edition modpack. Translations only, no original content redistributed.
 ```
 
 ## Description
 
 ```
-Unofficial Japanese localization for the Vault Hunters 3rd Edition modpack (Minecraft 1.18.2 / Forge). Translations only — no original game content is redistributed.
+Unofficial Japanese localization for the Vault Hunters 3rd Edition modpack (Minecraft 1.18.2 / Forge). Translations only. No original game content is redistributed.
 
-WHAT GETS TRANSLATED: item, block and tooltip strings, skill / ability / quest descriptions (config text — original numeric values are kept untouched, zero balance changes), hardcoded UI strings (replaced at runtime via VaultPatcher), and the in-game guidebook. Roughly 15,000 display strings in total.
+WHAT GETS TRANSLATED: item, block and tooltip strings, skill / ability / quest descriptions (config text; original numeric values are kept untouched, zero balance changes), hardcoded UI strings (replaced at runtime via VaultPatcher), and the in-game guidebook. Roughly 15,000 display strings in total.
 
-INSTALL: install this project from the CurseForge App; VaultPatcher is installed automatically as a required dependency. Untranslated strings simply stay in English — the game never breaks. Some names intentionally remain in English because they double as internal identifiers (ability / talent names, god names, stat labels); translating them would break the game, so we don't. Note: the hardcoded-UI layer activates from the SECOND launch after installing (everything else is translated from the first launch).
+INSTALL: install this project from the CurseForge App; VaultPatcher is installed automatically as a required dependency. Untranslated strings simply stay in English, so the game never breaks. Some names intentionally remain in English because they double as internal identifiers (ability / talent names, god names, stat labels); translating them would break the game, so we don't. Note: the hardcoded-UI layer activates from the SECOND launch after installing (everything else is translated from the first launch).
 
 TARGET VERSION: Vault Hunters 3rd Edition 3.21.7. We keep tracking modpack updates.
 
-RIGHTS & TRANSPARENCY: Unofficial, non-commercial fan project — not affiliated with Team Iskallia. Vault Hunters and the_vault are the property of Team Iskallia (All Rights Reserved). This project ships translations only; the VaultPatcher rules necessarily contain the minimal original English strings needed for matching, and nothing more. Built on the MIT-licensed community translation by suzu2469, with credit (see the bundled NOTICE). Our own work is MIT-licensed. Before publishing, we asked in the official Discord about the proper process and publicly disclosed the full technical approach. If the rights holder asks us to stop, we will take this project down immediately.
+RIGHTS & TRANSPARENCY: Unofficial, non-commercial fan project, not affiliated with Team Iskallia. Vault Hunters and the_vault are the property of Team Iskallia (All Rights Reserved). This project ships translations only; the VaultPatcher rules necessarily contain the minimal original English strings needed for matching, and nothing more. Built on the MIT-licensed community translation by suzu2469, with credit (see the bundled NOTICE). Our own work is MIT-licensed. Before publishing, we asked in the official Discord about the proper process and publicly disclosed the full technical approach. If the rights holder asks us to stop, we will take this project down immediately.
 
 SOURCE & FEEDBACK: https://github.com/matsumotory/minecraft-vault-hunters-3-japanese-translation
 
