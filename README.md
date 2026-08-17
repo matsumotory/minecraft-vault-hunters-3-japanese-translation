@@ -8,7 +8,7 @@ Minecraftのmodpack「Vault Hunters 3rd Edition」(Minecraft 1.18.2 / Forge) を
 
 ## これは何ですか
 
-Vault Huntersは、スキルやクエストの説明文の多くをmod独自の場所に持っています。そのため、Minecraftの言語設定を日本語にしても、大部分が英語のまま残ります。このmodを入れると、次の表示文字列 約15,000件が日本語になります。
+Vault Huntersは、スキルやクエストの説明文の多くをmod独自の場所に持っています。そのため、Minecraftの言語設定を日本語にしても、大部分が英語のまま残ります。このmodを入れると、次の表示文字列 約14,400件が日本語になります。
 
 - アイテム名、ブロック名、ツールチップ
 - スキル、アビリティ、クエストの説明文 (ゲームバランスの数値には一切触れません)
@@ -50,7 +50,7 @@ Vault Hunters 3rd Editionは、Iskall85Teamが制作した大型のmodpackです
 ### 手動で入れる場合 (CurseForgeアプリを使わないとき)
 
 1. [GitHub Releases](https://github.com/matsumotory/minecraft-vault-hunters-3-japanese-translation/releases) から `vhjapanese-*.jar` をダウンロードします
-2. [VaultPatcher](https://www.curseforge.com/minecraft/mc-mods/vaultpatcher) のForge 1.18.2向けASM版もダウンロードします
+2. [VaultPatcher](https://www.curseforge.com/minecraft/mc-mods/vault-patcher) のForge 1.18.2向けASM版もダウンロードします
 3. 2つのjarを、インスタンスの `mods` フォルダへ入れます
 4. 同じく、ゲームを1回起動して終了し、もう一度起動します
 

@@ -6,7 +6,7 @@
 
 Minecraftのmodpack「Vault Hunters 3rd Edition」(Minecraft 1.18.2、Forge) を日本語で遊べるようにする翻訳companion mod。lang層とゲーム内ガイドブックの訳文をmodのassetsとして同梱し、config層の訳文をゲーム起動時に手元のconfigへ差し込み、ハードコード層の置換設定をVaultPatcher (別mod、Required Library) へ供給する。翻訳そのもの (白紙翻訳、監査、用語決め) は別の作業環境で行われ、このリポジトリには生成済みの訳文データだけが入る。
 
-対象はMinecraft Java版1.18.2、ローダーはForge (ForgeGradle 5 + Java 17)。modidはvhjapanese。配布はCurseForgeとGitHub Releases。ライセンスは当方創作部分がMIT。
+対象はMinecraft Java版1.18.2、ローダーはForge (ForgeGradle 5 + Java 17)。modidはvhjapanese。配布はCurseForgeとGitHub Releases。ライセンスはmatsumotoryの創作部分がMIT。
 
 ## 2. 権利の規律 (最重要)
 

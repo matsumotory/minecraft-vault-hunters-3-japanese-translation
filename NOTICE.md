@@ -30,12 +30,14 @@ Vault Huntersとthe_vaultは、Team Iskallia (85 Entertainment AB) の著作物�
 | lang文字列 (minecraft由来の9キー) | 9キー | 9件 (少数のため白紙比較は未実施の暫定扱い) | - | - |
 | スキルやクエストの説明文 (config) | 8,036文字列 | 2,019件 (25.1%) | - | 6,017件 (74.9%)。内訳は、先行翻訳より白紙翻訳が良く置き換えた2,589件と、先行翻訳が存在せず新規に翻訳した3,428件 |
 | ゲーム内ガイドブックの表示文 | 419文 | 39件 (9.3%) | 131件 (31.3%) | 249件 (59.4%) |
-| 画面に直接書き込まれたUIの文字 (約3,600置換) | 約3,600 | 0件 | - | 全件。先行プロジェクトが扱っていない範囲で、すべてmatsumotoryの新規翻訳です |
+| 画面に直接書き込まれたUIの文字 (3,587置換) | 3,587 | 0件 | - | 全件。先行プロジェクトが扱っていない範囲で、すべてmatsumotoryの新規翻訳です |
 | mod実装、生成と検証のプログラム、文書 | - | - | - | すべてmatsumotoryの作成です |
+
+config層は、独立一致を分けて集計していません (採用と、置き換えと、新規の3つで数えています)。
 
 ### まとめ
 
-表示文字列の全体 約14,900件のうち、先行翻訳の採用は約2,490件で、全体の約17%です。残る約83%はmatsumotoryの白紙翻訳です (そのうち約1,100件は、先行翻訳と同じ訳文に独立に到達した独立一致です)。
+表示文字列の全体は約14,400件です (2,359 + 9 + 8,036 + 419 + 3,587 = 14,410件の概数)。そのうち先行翻訳の採用は約2,490件で、全体の約17%です。残る約83%はmatsumotoryの白紙翻訳です (そのうち約1,100件は、先行翻訳と同じ訳文に独立に到達した独立一致です)。
 
 数の割合とは別に、suzu2469版には用語の土台としての大きな貢献があります。ヴォールト、レリック、アーティファクトのような中核の訳語の一部は、suzu2469版で確立した訳を、matsumotoryの検証を経て引き継いだものです。この敬意を、本表とMITライセンスの帰属表示で明示します。
 
@@ -78,10 +80,12 @@ Measured breakdown (machine counted on 2026-08-11):
 | lang strings (9 minecraft keys) | 9 keys | 9 (provisional; too few for the comparison) | - | - |
 | Skill and quest descriptions (config) | 8,036 strings | 2,019 (25.1%) | - | 6,017 (74.9%): 2,589 where the from-scratch translation replaced the prior one, plus 3,428 newly translated strings the prior work never covered |
 | In-game guidebook display text | 419 | 39 (9.3%) | 131 (31.3%) | 249 (59.4%) |
-| Hardcoded UI strings (about 3,600 replacements) | about 3,600 | 0 | - | all of them; the prior project did not cover this layer |
+| Hardcoded UI strings (3,587 replacements) | 3,587 | 0 | - | all of them; the prior project did not cover this layer |
 | Mod code, build and validation tooling, documents | - | - | - | all by matsumotory |
 
-In total, out of roughly 14,900 display strings, about 2,490 (about 17 percent) are adopted from the prior work. The remaining about 83 percent is matsumotory's from-scratch translation, and about 1,100 of those independently matched the prior wording. Beyond the numbers, the prior work made a large contribution as the foundation of the terminology: several core terms were carried over from suzu2469's established wording after verification. We state this respect here and in the MIT attribution.
+For the config layer, independent matches were not counted separately; the three categories there are adopted, replaced and new.
+
+In total there are about 14,400 display strings (2,359 + 9 + 8,036 + 419 + 3,587 = 14,410), and about 2,490 of them (about 17 percent) are adopted from the prior work. The remaining about 83 percent is matsumotory's from-scratch translation, and about 1,100 of those independently matched the prior wording. Beyond the numbers, the prior work made a large contribution as the foundation of the terminology: several core terms were carried over from suzu2469's established wording after verification. We state this respect here and in the MIT attribution.
 
 ### Not bundled
 

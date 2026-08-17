@@ -8,7 +8,7 @@ Unofficial Japanese localization companion mod for the Vault Hunters 3rd Edition
 
 ## What this mod does
 
-Vault Hunters keeps most of its skill and quest descriptions in mod specific places, so switching the Minecraft language to Japanese leaves most of the text in English. This mod translates roughly 15,000 display strings into Japanese:
+Vault Hunters keeps most of its skill and quest descriptions in mod specific places, so switching the Minecraft language to Japanese leaves most of the text in English. This mod translates roughly 14,400 display strings into Japanese:
 
 - Item, block and tooltip strings
 - Skill, ability and quest descriptions (config text; numeric balance values are never touched)
@@ -28,7 +28,7 @@ Vault Hunters keeps most of its skill and quest descriptions in mod specific pla
 4. Quit the game and launch it again. The hardcoded UI translations activate on this second launch; everything else works from the first launch
 5. If the game is not in Japanese yet, open Options, then Language, and select 日本語 (日本)
 
-Manual install: download `vhjapanese-*.jar` from [Releases](https://github.com/matsumotory/minecraft-vault-hunters-3-japanese-translation/releases) and the Forge 1.18.2 ASM build of [VaultPatcher](https://www.curseforge.com/minecraft/mc-mods/vaultpatcher), put both jars into the `mods` folder of the instance, then do the same two launches.
+Manual install: download `vhjapanese-*.jar` from [Releases](https://github.com/matsumotory/minecraft-vault-hunters-3-japanese-translation/releases) and the Forge 1.18.2 ASM build of [VaultPatcher](https://www.curseforge.com/minecraft/mc-mods/vault-patcher), put both jars into the `mods` folder of the instance, then do the same two launches.
 
 ## Verify that it works
 
